@@ -1,10 +1,28 @@
-h1{
-    color:red;
-}
+
 .custom-navbar{
-    background-color: black;
+
+    background-color: #0c2035;
+    height: 6em;
     
 }
 .custom-navbar a {
-    color: greenyellow;
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.accordion .accordion-header {
+    background-color: #0c2035 ;
+    color: whitesmoke;
+}
+.accordion-button {
+    color:whitesmoke;
+}
+
+.accordion .accordion-body {
+    background-color: #0c2035; 
+    color: whitesmoke;
+}
+.accordion .accordion-button.collapsed {
+    background-color: #0c2035; 
+    color: whitesmoke;
 }
