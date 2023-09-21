@@ -4,6 +4,9 @@ body{
 a{
     color: whitesmoke;
 }
+h1{
+    text-align: center;
+}
 .contenedor-terminos{
     background-color: #0c2035;
     color:whitesmoke;

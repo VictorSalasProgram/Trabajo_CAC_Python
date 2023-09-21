@@ -106,6 +106,21 @@ p {
     margin: auto;
     margin-bottom: 1em;
 }
+label{
+    color: whitesmoke;
+    
+
+}
+#aaa{
+    display: block;
+    margin: 0 auto;
+    width: 18em;
+    margin-bottom: 2em;
+
+}
+#check-form{
+    color: whitesmoke;
+}
 #botonera{
     text-align: center;
     padding-bottom: 2em;
