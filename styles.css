@@ -42,6 +42,36 @@
     margin: 0 auto;
     background-color: #0c2035;
 }
+.custom-cards{
+    background-color: #0c2035;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5em;
+    
+
+}
+.card-body{
+    background-color: #2c475f;
+    height: 30em;
+
+}
+p {
+    color: whitesmoke;
+}
+#card-title1{
+    color: whitesmoke;
+      
+}
+#card-title2{
+    color: whitesmoke;
+      
+}
+#card-title3{
+    color: whitesmoke;
+      
+}
+
+
 #nombre-form{
     width: 30em;
     margin: 0 auto;
