@@ -1,3 +1,6 @@
-var titulo = document.getElementById("titulo");
+let botonCalcular = document.getElementById("boton-calcular");
+botonCalcular.onclick= popCalcular;
 
-console.log(titulo.textContent);
+function popCalcular(){
+    alert("Calculando cotizacion")
+}
