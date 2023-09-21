@@ -1,0 +1,18 @@
+body{
+    background-color: #2c475f;
+}
+a{
+    color: whitesmoke;
+}
+.contenedor-terminos{
+    background-color: #0c2035;
+    color:whitesmoke;
+    padding: 1%;
+    
+}
+h3{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
+}
