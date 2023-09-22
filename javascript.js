@@ -5,6 +5,9 @@ let formCorreo = document.getElementById("form-correo")
 let formServicio1 = document.getElementById("select")
 let formServicio2 = document.getElementById("select2")
 let formCheck = document.getElementById("flexCheckDefault")
+let inputMonto = document.getElementById("input-monto")
+
+
 botonCalcular.onclick= popCalcular;
 botonBorrar.onclick = borrarCampos;
 
@@ -17,6 +20,7 @@ function popCalcular(){
                 formServicio1.setAttribute("disabled", "true")
                 formServicio2.setAttribute("disabled", "true")
                 formCheck.setAttribute("disabled", "true")
+                inputMonto.value = "Aca va el monto"
                 alert("Calculando cotizacion")
             }
             else{
@@ -43,4 +47,5 @@ function borrarCampos(){
     formServicio1.removeAttribute("disabled")
     formServicio2.removeAttribute("disabled")
     formCheck.removeAttribute("disabled")
+    inputMonto.value= ""
 }

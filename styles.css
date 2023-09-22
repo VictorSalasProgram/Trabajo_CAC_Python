@@ -17,6 +17,8 @@
     z-index: 100;
     width: 100%;
 }
+
+/*ACA TERMINA NAVBAR*/
 #seccion-formulario{
     background-color: 2c475f;
     
@@ -51,6 +53,8 @@
     margin: 0 auto;
     background-color: #0c2035;
 }
+
+
 .custom-cards{
     background-color: #0c2035;
     text-align: center;
@@ -79,7 +83,7 @@ p {
     color: whitesmoke;
       
 }
-
+/* */
 
 #nombre-form{
     width: 30em;
@@ -130,6 +134,7 @@ label{
 #check-form{
     color: whitesmoke;
 }
+
 .card-body2{
     background-color: #2c475f;
    height: 100%;
