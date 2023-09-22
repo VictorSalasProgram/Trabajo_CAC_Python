@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .custom-navbar{
     
@@ -48,11 +52,21 @@
 .accordion-body{
     height: 20em;
 }
-.accordion{
-    width: 60em;
-    margin: 0 auto;
-    background-color: #0c2035;
-}
+
+/* Estilos para títulos de acordeones en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .accordion-button {
+      font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+  }
+  
+  /* Estilos para el contenido de acordeones en pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .accordion-body {
+      font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+  }
+  
 
 
 .custom-cards{
@@ -60,16 +74,26 @@
     text-align: center;
     justify-content: center;
     padding-top: 5em;
+    width: 100%;
+    
     
 
 }
 .card-body{
     background-color: #2c475f;
     height: 23em;
+    max-height: 23em; 
 
+}
+@media (max-width: 768px) {
+    .card-body {
+        height: auto; /* Deja que la altura se ajuste automáticamente al contenido */
+        font-size: 14px; /* Reducir el tamaño del texto */
+    }
 }
 p {
     color: whitesmoke;
+   
 }
 #card-title1{
     color: whitesmoke;
@@ -86,12 +110,12 @@ p {
 /* */
 
 #nombre-form{
-    width: 30em;
+    width: 30%;
     margin: 0 auto;
     padding-top: 2em;
 }
 #email-form {
-    width: 30em;
+    width: 30%;
     margin: 0 auto;
 }
 .fondo{
@@ -104,18 +128,18 @@ p {
     
 }
 #monto-form{
-    width: 30em;
+    width: 30%;
     margin: 0 auto;
 }
 #select2{
-    width: 30em;
+    width:30%;
     margin: auto;
     margin-bottom: 1em;
 }
 
 #select{
     
-    width: 30em;
+    width: 30%;
     margin: auto;
     margin-bottom: 1em;
 }
@@ -124,10 +148,10 @@ label{
     
 
 }
-#aaa{
+#contenedor-check{
     display: block;
     margin: 0 auto;
-    width: 18em;
+    width: 18%;
     margin-bottom: 2em;
 
 }
