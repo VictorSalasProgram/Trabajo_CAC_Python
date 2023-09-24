@@ -7,7 +7,7 @@ let formServicio2 = document.getElementById("select2")
 let formCheck = document.getElementById("flexCheckDefault")
 let inputMonto = document.getElementById("input-monto")
 
-
+//SE VA 
 botonCalcular.onclick= popCalcular;
 botonBorrar.onclick = borrarCampos;
 
