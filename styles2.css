@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Consolas, sans-serif;
-    background-color: #0c2035;
+    background-color: #4285a1;
 }
 
 .custom-navbar {
@@ -106,32 +106,32 @@ body {
 
 
 /* CARDS */
-.custom-cards {
+.contendor-cards {
     display: flex;
     justify-content: space-between;
     background-color: #0c2035;
   }
   
-  .card {
+  .bloque {
     width: 30%;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 5px;
     margin: 10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .card-title {
+  .titulo-bloque {
     font-size: 1.5rem;
     color: whitesmoke;
   }
   
-  .texto-card {
+  .texto-bloque {
     font-size: 1rem;
     color: whitesmoke;
   }
   
-  .btn {
+  .boton-bloque {
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
@@ -140,28 +140,83 @@ body {
     display: inline-block;
   }
   
-  .btn:hover {
+  .boton-bloque:hover {
     background-color: #0056b3;
   }
-  
+  /* EMPIZA FORM */
+  #nombre-form{
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+#email-form {
+    width: 30%;
+    margin: 0 auto;
+}
+#textarea-form{
 
+}
+.fondo{
+    background-color: #0c2035; /*#2c475f*/
+    padding-top: 3em;
+}
+#titulo-form{
+    color: whitesmoke;
+    text-align: center;
+    
+}
+#monto-form{
+    width: 30%;
+    margin: 0 auto;
+}
+#select2{
+    width:30%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+#select{
+    
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+label{
+    color: whitesmoke;
+    
+
+}
+#contenedor-check{
+    display: block;
+    margin: 0 auto;
+    width: 18%;
+    margin-bottom: 2em;
+
+}
+/* TERMINA FORM */
   /* FOOTER */
+  .contendor-footer{
+    background-color: #0c2035;
+    height: 70px;
+    
+  }
 
-  .footer-nav {
+  .lista-footer {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
+    
 
     
   }
   
-  .footer-nav li {
+  .lista-footer li {
     margin: 0 15px;
 
   }
   
-  .footer-nav a {
+  .lista-footer a {
     text-decoration: none;
     color: whitesmoke; 
 }
