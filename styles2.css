@@ -124,9 +124,9 @@ body {
   .titulo-bloque {
     font-size: 1.5rem;
     color: whitesmoke;
-  }
-  
-  .texto-bloque {
+}
+
+.texto-bloque {
     font-size: 1rem;
     color: whitesmoke;
   }
@@ -153,9 +153,7 @@ body {
     width: 30%;
     margin: 0 auto;
 }
-#textarea-form{
 
-}
 .fondo{
     background-color: #0c2035; /*#2c475f*/
     padding-top: 3em;
