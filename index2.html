@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" type="image/png" href="/imagenes/icono2.png">
     <title>Index 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
+<body> 
+  <!-- ACA EMPIEZA NAVBAR -->
     <nav class="custom-navbar">
         <div class="navbar-logo">
             <a href="index2.html"><img id="img" src="imagenes/icono2.png" alt="Logo"></a>
@@ -24,36 +27,75 @@
         <h2 class="titulo-bienvenida">Bienvenidos</h2>
         <img class="imagen-principal" src="imagenes/carusel3.jpg" alt="">
     </div>
-    <div class="custom-cards">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title" id="card-title1">Mesual</h5>
-            <p class="texto-card">Descubre la comodidad y flexibilidad de nuestro paquete mensual. Con este plan, tendrás acceso completo a nuestro servicio durante un mes entero. Disfruta de todas las características y ventajas que ofrecemos mientras mantienes la libertad de decidir mes a mes si deseas continuar. Ideal para aquellos que buscan probar nuestro servicio o necesitan una solución temporal.</p>
-            <a href="#" class="btn btn-primary">Mas informacion</a>
+<!-- ACA TERMINA NAVBAR -->
+<!-- ACA EMPIZAN LAS CARDS -->
+    <div class="contendor-cards">
+        <div class="bloque">
+          <div class="contendor">
+            <h5 class="titulo-bloque" >Mesual</h5>
+            <p class="texto-bloque">Descubre la comodidad y flexibilidad de nuestro paquete mensual. Con este plan, tendrás acceso completo a nuestro servicio durante un mes entero. Disfruta de todas las características y ventajas que ofrecemos mientras mantienes la libertad de decidir mes a mes si deseas continuar. Ideal para aquellos que buscan probar nuestro servicio o necesitan una solución temporal.</p>
+            <a href="#" class="boton-bloque">Mas informacion</a>
           </div>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title" id="card-title2">Semestral</h5>
-            <p class="texto-card">Nuestro paquete semestral es la elección perfecta para aquellos que desean comprometerse a largo plazo y ahorrar. Con este plan, obtendrás acceso continuo a nuestro servicio durante seis meses completos. Además de todas las funciones, recibirás un descuento especial como recompensa por tu compromiso. Asegura tu acceso ininterrumpido y ahorra en grande..</p>
-            <a href="#" class="btn btn-primary">Mas informacion</a>
+        <div class="bloque">
+          <div class="contendor">
+            <h5 class="titulo-bloque">Semestral</h5>
+            <p class="texto-bloque">Nuestro paquete semestral es la elección perfecta para aquellos que desean comprometerse a largo plazo y ahorrar. Con este plan, obtendrás acceso continuo a nuestro servicio durante seis meses completos. Además de todas las funciones, recibirás un descuento especial como recompensa por tu compromiso. Asegura tu acceso ininterrumpido y ahorra en grande..</p>
+            <a href="#" class="boton-bloque">Mas informacion</a>
           </div>
         </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title" id="card-title3">Anual</h5>
-            <p class="texto-card">El paquete anual es nuestra opción premium para usuarios comprometidos. Con esta suscripción, disfrutarás de nuestro servicio durante todo un año. Obtén todas las funciones avanzadas, actualizaciones y soporte prioritario. Ahorra aún más con un descuento exclusivo para aquellos que se comprometen a largo plazo. Garantiza tu acceso continuo y disfruta de la tranquilidad de estar cubierto durante todo el año.</p>
-            <a href="#" class="btn btn-primary">Mas informacion</a>
+        <div class="bloque">
+          <div class="contendor">
+            <h5 class="titulo-bloque" >Anual</h5>
+            <p class="texto-bloque">El paquete anual es nuestra opción premium para usuarios comprometidos. Con esta suscripción, disfrutarás de nuestro servicio durante todo un año. Obtén todas las funciones avanzadas, actualizaciones y soporte prioritario. Ahorra aún más con un descuento exclusivo para aquellos que se comprometen a largo plazo. Garantiza tu acceso continuo y disfruta de la tranquilidad de estar cubierto durante todo el año.</p>
+            <a href="#" class="boton-bloque">Mas informacion</a>
           </div>
         </div>
       </div>
-      
+    <!-- ACA TERMINAN LAS CARDS -->
+    <!-- EMPIEZA EL FORM -->
+    <div class="fondo">
+      <h2 id="titulo-form">Formulario de cotizacion.</h2>
+    <div class="input-group mb-3" id="nombre-form">
+      <span class="input-group-text" id="basic-addon1">Nombre: </span>
+      <input type="text"  class="form-control" id="form-name" placeholder="Escribe tu nombre" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    
+    <div class="input-group mb-3 " id="email-form">
+      <span class="input-group-text" id="basic-addon2">Correo: </span>
+      <input type="email" class="form-control" placeholder="Escribe tu email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="form-correo">
+    </div>
+    
+    <select class="form-select" id="select" aria-label="Default select example">
+      <option selected>Selecciona un servicio</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <!--<select class="form-select" id="select2" aria-label="Default select example">
+      <option selected>Selecciona un paquete</option>
+      <option value="1">Mensual</option>
+      <option value="2">Semestral</option>
+      <option value="3">Anual</option>
+    </select>-->
+    
+
+
+    <div id="contenedor-check">
+    <div class="form-check" id="check-form">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Aceptar <a href="/vistas/terminos.html" target="_blank">Terminos & condiciones.</a>
+      </label>
+    </div>
+  </div>
+    <!-- TERMINA EL FORM -->
 <!-- FOOTER -->
       <ul class="footer-nav">
-        <li><a href="vistas/terminos.html">Terminos & condiciones</a></li>
+        <li><a href="/vistas/terminos.html">Terminos & condiciones</a></li>
         <li><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
         <li><a class="disabled" href="#">Disabled</a></li>
-      </ul>    
+      </ul>
 </body>
 </html>
