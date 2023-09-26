@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;    
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ body {
     align-items: center;
     background-color: #0c2035;
     color: whitesmoke;
-    padding: 10px;
+    padding: 25px;
     }
 
 .custom-navbar .navbar-logo {
@@ -23,25 +27,39 @@ body {
 .custom-navbar .navbar-links {
     display: grid;
     grid-auto-flow: column;
-    gap: 20px;
-    justify-self: start; /* Modificado: Alinea los enlaces a la izquierda */
+    gap: 10px;
+    padding: 0 5px;/* Ajuste del espacio en los bordes del contenedor de enlaces */
+    justify-self: start; /* Ajuste de los enlaces a la izquierda */
     }
+
+.custom-navbar .navbar-links .nav-link{
+    padding: 2px;/* Ajuste del tamaño del enlace */
+}    
 
 .custom-navbar .navbar-links .nav-link:first-child {
-    margin-left: 20px; /* Modificado: Agrega margen izquierdo */
+    margin-left: 20px; /* Modificado: Agrega margen izquierdo */ 
     }
-  
-.custom-navbar a {
-    color: whitesmoke;
-    font-size: 1.5em;
-    align-items: start;
-    font-family: sans-serif;
-    transition: color 0.3s;
+    
+    .navbar-links a {
+        color: whitesmoke;
+        font-size: 1.5em;
+        align-items: start;
+        font-family: sans-serif;
+        transition: color 0.3s;
+        text-decoration: none; 
     }
 
-.custom-navbar a:hover {
-    color: wheat;
-}
+    .navbar-links > a:hover{
+        border-radius: .5em;
+        color: wheat;
+        cursor: pointer;
+        box-shadow:0px 0px 50px #50ffff;
+        transition: box-shadow 0.3s;
+        
+        background-color: steelblue;
+        border: none;}
+    
+
 
 .navbar-logo {
     img {
