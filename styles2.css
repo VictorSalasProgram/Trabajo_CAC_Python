@@ -155,6 +155,7 @@ posicionamiento, puse el :hover en .custom-navbar a
 
 /* CARDS */
 .contendor-cards {
+    padding-top: 5%;
     display: flex;
     justify-content: space-between;
     background-color: #0c2035;
@@ -167,6 +168,10 @@ posicionamiento, puse el :hover en .custom-navbar a
     margin: 10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   .titulo-bloque {
@@ -193,6 +198,7 @@ posicionamiento, puse el :hover en .custom-navbar a
   .boton-bloque:hover {
     background-color: #0056b3;
   }
+
   /* EMPIZA FORM */
   #nombre-form{
     width: 30%;
