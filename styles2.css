@@ -3,16 +3,38 @@ body {
     padding: 0;
     font-family: Consolas, sans-serif;
     background-color: #0c2035;
-}
+    }
 
 .custom-navbar {
     display: grid;
-    grid-template-columns: 1fr auto 1fr auto;
+    grid-template-columns: auto 1fr 1fr 1fr; /* Modificado: Cambiado el orden de las columnas */
     align-items: center;
     background-color: #0c2035;
     color: whitesmoke;
     padding: 10px;
-}
+    }
+
+.custom-navbar .navbar-logo {
+    grid-column: 1; /* Modificado: Posiciona la columna del logo en la primera posición */
+    }
+
+.custom-navbar .navbar-links {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-self: start; /* Modificado: Alinea los enlaces a la izquierda */
+    }
+
+.custom-navbar .navbar-links .nav-link:first-child {
+    margin-left: 20px; /* Modificado: Agrega margen izquierdo */
+    }
+  
+.custom-navbar a {
+    color: whitesmoke;
+    font-size: 1.5em;
+    align-items: start;
+    font-family: sans-serif;
+    }
 
 .navbar-logo {
     img {
@@ -20,6 +42,16 @@ body {
         vertical-align: middle;
     }
 }
+
+#img{                 /*Modificado: Sombra y animación ícono*/
+    margin: 0;
+}
+
+#img:hover{
+    filter:drop-shadow(0px 0px 30px #50ffff);
+    cursor: pointer;
+}
+
 
 .navbar-links {
     display: grid;
@@ -49,6 +81,10 @@ body {
     background-color: whitesmoke;
     position: relative;
 }
+
+
+
+
 
 /* .navbar-icon:before, .navbar-icon:after {
     content: "";
