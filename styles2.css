@@ -172,6 +172,14 @@ posicionamiento, puse el :hover en .custom-navbar a
 
 
 /* CARDS */
+#titulo-servicios{
+    background-color: #0c2035;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding-top: 10%;
+    font-size: 350%;
+}
 .contendor-cards {
     padding-top: 5%;
     display: flex;
@@ -230,7 +238,7 @@ posicionamiento, puse el :hover en .custom-navbar a
 
 .fondo{
     background-color: #0c2035; /*#2c475f*/
-    padding-top: 3em;
+    padding-top: 10%;
     display: flex;
     justify-content: center;
 
@@ -247,7 +255,7 @@ section{
     color: whitesmoke;
     text-align: center;
     font-size: 300%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     
 }
 #monto-form{
@@ -255,7 +263,7 @@ section{
     margin: 0 auto;
 }
 #select2{
-    width:30%;
+    width:60%;
     margin: auto;
     margin-bottom: 1em;
 }

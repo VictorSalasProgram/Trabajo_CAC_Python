@@ -15,13 +15,14 @@ function popCalcular(){
     if(formNombre.value != ""){
         if(formCorreo.value != ""){
             if(formCheck.checked === true){
+                alert("Calculando cotizacion a nombre de " + formNombre.value)
                 formNombre.setAttribute("disabled", "true")
                 formCorreo.setAttribute("disabled", "true")
                 formServicio1.setAttribute("disabled", "true")
                 formServicio2.setAttribute("disabled", "true")
                 formCheck.setAttribute("disabled", "true")
                 inputMonto.value = "Aca va el monto"
-                alert("Calculando cotizacion")
+                
             }
             else{
                 alert("ACEPTE LOS TERMINOS Y CONDICIONES")
