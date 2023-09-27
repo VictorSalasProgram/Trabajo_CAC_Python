@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;    
+    
 }
 
 body {
@@ -15,9 +16,10 @@ body {
     display: grid;
     grid-template-columns: auto 1fr 1fr 1fr; /* Modificado: Cambiado el orden de las columnas */
     align-items: center;
-    background-color: #0c2035;
+    background-color: #040f1b;
     color: whitesmoke;
     padding: 25px;
+    z-index: 100;
     }
 
 .custom-navbar .navbar-logo {
@@ -171,13 +173,21 @@ posicionamiento, puse el :hover en .custom-navbar a
 }
 
 
+
 /* CARDS */
-#titulo-servicios{
+
+.contenedor-seccion{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
     background-color: #0c2035;
+}
+#titulo-servicios{
+    background-color: #040f1b;
     color: whitesmoke;
     text-align: center;
     margin: 0;
-    padding-top: 10%;
+    width: 100%;
     font-size: 350%;
 }
 .contendor-cards {
@@ -198,6 +208,7 @@ posicionamiento, puse el :hover en .custom-navbar a
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #040f1b;
   }
   
   .titulo-bloque {
@@ -227,51 +238,53 @@ posicionamiento, puse el :hover en .custom-navbar a
   }
 
   /* EMPIZA FORM */
+  #titulo-form{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 350%;
+    background-color: #040f1b;
+    width: 100%;
+}
   #nombre-form{
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
     padding-top: 2em;
 }
 #email-form {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
 
 .fondo{
     background-color: #0c2035; /*#2c475f*/
-    padding-top: 10%;
+    padding-top: 6%;
     display: flex;
     justify-content: center;
+    padding-bottom: 20%;
 
 }
 section{
     border: 3px solid whitesmoke;
-    width: 60%;
-    height:40%;
+    width: 50%;
+    height:35%;
     padding-bottom: 5%;
     padding-top: 5%;
     
 }
-#titulo-form{
-    color: whitesmoke;
-    text-align: center;
-    font-size: 300%;
-    margin-bottom: 3%;
-    
-}
+
 #monto-form{
     width: 40%;
     margin: 0 auto;
 }
 #select2{
-    width:60%;
+    width:65%;
     margin: auto;
     margin-bottom: 1em;
 }
 
 #select{
     
-    width: 60%;
+    width: 65%;
     margin: auto;
     margin-bottom: 1em;
 }
@@ -283,7 +296,7 @@ label{
 #contenedor-check{
     display: block;
     margin: 0 auto;
-    width: 30%;
+    width: 35%;
     margin-bottom: 2em;
 
 }
@@ -314,7 +327,7 @@ label{
 /* TERMINA FORM */
   /* FOOTER */
   .contendor-footer{
-    background-color: #0c2035;
+    background-color: #040f1b;
     height: 70px;
     
   }
