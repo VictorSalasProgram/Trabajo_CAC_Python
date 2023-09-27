@@ -172,6 +172,14 @@ posicionamiento, puse el :hover en .custom-navbar a
 
 
 /* CARDS */
+#titulo-servicios{
+    background-color: #0c2035;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding-top: 10%;
+    font-size: 350%;
+}
 .contendor-cards {
     padding-top: 5%;
     display: flex;
@@ -220,37 +228,50 @@ posicionamiento, puse el :hover en .custom-navbar a
 
   /* EMPIZA FORM */
   #nombre-form{
-    width: 30%;
+    width: 60%;
     margin: 0 auto;
     padding-top: 2em;
 }
 #email-form {
-    width: 30%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .fondo{
     background-color: #0c2035; /*#2c475f*/
-    padding-top: 3em;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+section{
+    border: 3px solid whitesmoke;
+    width: 60%;
+    height:40%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    
 }
 #titulo-form{
     color: whitesmoke;
     text-align: center;
+    font-size: 300%;
+    margin-bottom: 3%;
     
 }
 #monto-form{
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
 }
 #select2{
-    width:30%;
+    width:60%;
     margin: auto;
     margin-bottom: 1em;
 }
 
 #select{
     
-    width: 30%;
+    width: 60%;
     margin: auto;
     margin-bottom: 1em;
 }
@@ -262,12 +283,13 @@ label{
 #contenedor-check{
     display: block;
     margin: 0 auto;
-    width: 18%;
+    width: 30%;
     margin-bottom: 2em;
 
 }
 #botonera {
     text-align: center;
+    
   }
   
   .custom-button {
