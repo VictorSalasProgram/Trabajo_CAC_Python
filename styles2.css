@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;    
+    
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr 1fr 1fr; /* Modificado: Cambiado el orden de las columnas */
     align-items: center;
-    background-color: #0c2035;
+    background-color: #040f1b;
     color: whitesmoke;
     padding: 25px;
     }
@@ -171,13 +172,21 @@ posicionamiento, puse el :hover en .custom-navbar a
 }
 
 
+
 /* CARDS */
-#titulo-servicios{
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
     background-color: #0c2035;
+}
+#titulo-servicios{
+    background-color: #040f1b;
     color: whitesmoke;
     text-align: center;
     margin: 0;
-    padding-top: 10%;
+    width: 45%;
     font-size: 350%;
 }
 .contendor-cards {
@@ -241,6 +250,7 @@ posicionamiento, puse el :hover en .custom-navbar a
     padding-top: 10%;
     display: flex;
     justify-content: center;
+    padding-bottom: 20%;
 
 }
 section{
@@ -313,7 +323,7 @@ label{
 /* TERMINA FORM */
   /* FOOTER */
   .contendor-footer{
-    background-color: #0c2035;
+    background-color: #040f1b;
     height: 70px;
     
   }
