@@ -23,7 +23,7 @@ body {
     background-color: #040f1b;
     color: whitesmoke;
     padding: 25px;
-    z-index: 1;
+    z-index: 1000;
 }
 
 
@@ -331,10 +331,7 @@ section{
     
 }
 
-#monto-form{
-    width: 40%;
-    margin: 0 auto;
-}
+
 #select2{
     width:65%;
     margin: auto;
@@ -361,7 +358,7 @@ label{
 }
 #botonera {
     text-align: center;
-    
+    padding-bottom: 5%;
   }
   
   .custom-button {
@@ -377,12 +374,49 @@ label{
     background-color: #dc3545; /* Color de fondo rojo */
     color: #fff; /* Color de texto blanco */
   }
-  
-  #boton-calcular {
-    background-color: #007bff; /* Color de fondo azul */
+#boton-calcular{
+    background-color: #007bff;
+    color: whitesmoke;
+}
+
+#seccion-pagar{
+    border: 3px solid whitesmoke;
+    width: 50%;
+    height:35%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin: 0 auto;
+ /* display: none; */
+    
+}
+#seccion-pagar h3{
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+
+  #boton-pagar{
+    background-color: rgb(54, 159, 54); /* Color de fondo azul */
     color: #fff; /* Color de texto blanco */
   }
-  
+  #monto-form{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3%;
+    text-align: center;
+
+}
+#monto{
+ text-align: center;
+
+}
+#botonera2 {
+    display:block;
+    text-align: center;
+    
+  }
 
 
 /* TERMINA FORM */

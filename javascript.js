@@ -5,23 +5,28 @@ let formCorreo = document.getElementById("form-correo")
 let formServicio1 = document.getElementById("select")
 let formServicio2 = document.getElementById("select2")
 let formCheck = document.getElementById("flexCheckDefault")
-let inputMonto = document.getElementById("input-monto")
+let inputMonto = document.getElementById("monto")
+let seccionPagar = document.getElementById("seccion-pagar")
+let botonPagar = document.getElementById("boton-pagar")
 
-//SE VA 
+
 botonCalcular.onclick= popCalcular;
 botonBorrar.onclick = borrarCampos;
+botonPagar.onclick =pagar;
 
 function popCalcular(){
     if(formNombre.value != ""){
         if(formCorreo.value != ""){
             if(formCheck.checked === true){
                 alert("Calculando cotizacion a nombre de " + formNombre.value)
+                seccionPagar.style.display = "block";
                 formNombre.setAttribute("disabled", "true")
                 formCorreo.setAttribute("disabled", "true")
                 formServicio1.setAttribute("disabled", "true")
                 formServicio2.setAttribute("disabled", "true")
                 formCheck.setAttribute("disabled", "true")
                 inputMonto.value = "Aca va el monto"
+                
                 
             }
             else{
@@ -49,4 +54,9 @@ function borrarCampos(){
     formServicio2.removeAttribute("disabled")
     formCheck.removeAttribute("disabled")
     inputMonto.value= ""
+    seccionPagar.style.display = "none";
+}
+
+function pagar(){
+    alert("¡ "+formNombre.value + " Gracias por comprar nuestros servicios.!")
 }
