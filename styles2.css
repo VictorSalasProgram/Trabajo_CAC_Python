@@ -386,7 +386,7 @@ label{
     padding-bottom: 5%;
     padding-top: 5%;
     margin: 0 auto;
- /* display: none; */
+ display: none;
     
 }
 #seccion-pagar h3{
@@ -408,6 +408,7 @@ label{
     text-align: center;
 
 }
+
 #monto{
  text-align: center;
 

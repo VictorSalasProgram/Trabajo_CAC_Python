@@ -8,7 +8,10 @@ let formCheck = document.getElementById("flexCheckDefault")
 let inputMonto = document.getElementById("monto")
 let seccionPagar = document.getElementById("seccion-pagar")
 let botonPagar = document.getElementById("boton-pagar")
-
+let nombrePagar =document.getElementById("nombre-pagar")
+let correoPagar = document.getElementById("correo-pagar")
+let servicioPagar = document.getElementById("servicio-pagar")
+let servicio;
 
 botonCalcular.onclick= popCalcular;
 botonBorrar.onclick = borrarCampos;
@@ -18,15 +21,16 @@ function popCalcular(){
     if(formNombre.value != ""){
         if(formCorreo.value != ""){
             if(formCheck.checked === true){
-                alert("Calculando cotizacion a nombre de " + formNombre.value)
-                seccionPagar.style.display = "block";
-                formNombre.setAttribute("disabled", "true")
-                formCorreo.setAttribute("disabled", "true")
-                formServicio1.setAttribute("disabled", "true")
-                formServicio2.setAttribute("disabled", "true")
-                formCheck.setAttribute("disabled", "true")
-                inputMonto.value = "Aca va el monto"
-                
+
+                if(formServicio1.value != "Selecciona un servicio"){
+
+
+                  calcularCotizacion()
+
+                }
+                else{
+                    alert("SELECCIONE UN SERVICIO")
+                }             
                 
             }
             else{
@@ -46,17 +50,49 @@ function popCalcular(){
 }
 
 function borrarCampos(){
+    seccionPagar.style.display = "none"
     formCorreo.value = "";
     formNombre.value = "";
+    formServicio1.value = "Selecciona un servicio"
     formCorreo.removeAttribute("disabled")
     formNombre.removeAttribute("disabled")
     formServicio1.removeAttribute("disabled")
-    formServicio2.removeAttribute("disabled")
     formCheck.removeAttribute("disabled")
-    inputMonto.value= ""
-    seccionPagar.style.display = "none";
+    botonCalcular.removeAttribute("disabled")
+    formCheck.checked = false;
+
+    ;
 }
 
 function pagar(){
     alert("¡ "+formNombre.value + " Gracias por comprar nuestros servicios.!")
 }
+
+
+function servicios(){
+    if (formServicio1.value == 1){
+        servicio= "Mensual"
+    }
+    else if (formServicio1.value ==2){
+        servicio = "Semestral"
+    }
+    else if (formServicio1.value== 3){
+        servicio = "Anual"
+    }
+    return servicio;
+}
+function calcularCotizacion(){
+    alert("Calculando cotizacion a nombre de " + formNombre.value)
+    seccionPagar.style.display = "block";
+    formNombre.setAttribute("disabled", "true")
+    formCorreo.setAttribute("disabled", "true")
+    formServicio1.setAttribute("disabled", "true")
+    formCheck.setAttribute("disabled", "true")
+    inputMonto.value = "Aca va el monto"
+    nombrePagar.value = formNombre.value
+    correoPagar.value = formCorreo.value
+    servicioPagar.value = servicios()
+    botonCalcular.setAttribute("disabled","true")
+
+}
+
