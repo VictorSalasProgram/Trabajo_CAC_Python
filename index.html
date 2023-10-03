@@ -18,13 +18,15 @@
         <div class="navbar-links">
           <input type="checkbox" id="check">    
           <label for="check" class="checkbtn">
-            <i class="menu-icon"><img src="menu_h.png" alt=""></i>
+            <i class="menu-icon"><img id="menu_h" src="menu_h.png" alt=""></i>
           </label>
             <ul>
+              
                 <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="#titulo-servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#titulo-form" class="nav-link">Cotizaciones</a></li>
-                <li><a href="#" class="nav-link" >Contáctanos</a></li>
+                <li><a href="#contenedor-seccion" class="nav-link">Servicios</a></li>
+                <li><a href="#contenedor-seccion1" class="nav-link">Cotizaciones</a></li>
+                <li><a href="#" class="nav-link">Contáctanos</a></li>
+              
             </ul>
             <script src="menu.js"></script>
         </div>
@@ -36,7 +38,7 @@
     </div>
 <!-- ACA TERMINA NAVBAR -->
 <!-- ACA EMPIZAN LAS CARDS -->
-<div class="contenedor-seccion">
+<div class="contenedor-seccion" id="contenedor-seccion">
 <a href="#titulo-servicios" id="titulo-servicios">
   Nuestros servicios
 </a>
@@ -76,8 +78,8 @@
       </div>
     <!-- ACA TERMINAN LAS CARDS -->
     <!-- EMPIEZA EL FORM -->
-    <div class="contenedor-seccion">
-    <h2 id="titulo-form">Formulario de cotizacion.</h2>
+    <div class="contenedor-seccion" id="contenedor-seccion1">
+    <a href="#titulo-form" id="titulo-form">Formulario de cotizacion</a>
      </div>
     <div class="fondo">
     <section>
@@ -154,5 +156,7 @@
     </div>
     <script src="javascript.js"></script>
     <script src="/icono.js"></script>
+    <script src="menu_h.js"></script>
+    <!-- <script src="menu-desp.js"></script> -->
 </body>
 </html>
