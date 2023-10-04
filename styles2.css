@@ -690,6 +690,61 @@ img:hover{
 
 
 
+@media (max-width: 768px){
+    .custom-navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ; /* Ajustado a una sola columna */;
+    
+        text-align: center; /* Alineación de texto al centro */
+        padding: 12px; /* Reducción del padding */       
+    }
+
+    .custom-navbar li{
+        margin-bottom: 10px;
+    }
+
+    .contenedor-seccion #titulo-form{
+        
+        font-size: 40px;
+    }
+
+
+    .contendor-cards {
+        padding-top: 5%;
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        background-color: #0c2035;
+      }
+      
+
+    
+    .bloque {
+        width: 100%;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 0px;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: flex-start;
+        background-color: #040f1b;
+      }
+
+      
+
+    .contenedor-seccion .fondo {
+        width: 100%;
+        padding: 20px; /* Añade un relleno si es necesario */
+        margin: 0; /* Elimina cualquier margen */
+        box-sizing: border-box; /* Asegura que el relleno y el borde no aumenten el ancho */
+        background-color: #040f1b;
+         
+        }
+    
+}
 
 
 
