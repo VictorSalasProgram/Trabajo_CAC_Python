@@ -437,6 +437,16 @@ label{
     text-align: center;
 
 }
+#nombre-pagar , #correo-pagar, #servicio-pagar{
+    text-align: center;
+}
+
+p{
+    color: whitesmoke;
+}
+
+
+
 
 #monto{
  text-align: center;
@@ -445,6 +455,7 @@ label{
 #botonera2 {
     display:block;
     text-align: center;
+    padding-top: 3%;
     
   }
 
