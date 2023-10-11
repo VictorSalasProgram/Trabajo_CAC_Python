@@ -479,6 +479,16 @@ label{
     text-align: center;
 
 }
+#nombre-pagar , #correo-pagar, #servicio-pagar{
+    text-align: center;
+}
+
+p{
+    color: whitesmoke;
+}
+
+
+
 
 #nombre-pagar , #correo-pagar, #servicio-pagar{
     text-align: center;
@@ -498,6 +508,10 @@ p{
     display:block;
     text-align: center;
     padding-top: 3%;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> e8ad24767debf995a78cb514e202fac8ce2c4685
   }
 
 
