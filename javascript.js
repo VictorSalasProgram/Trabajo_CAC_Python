@@ -60,12 +60,14 @@ function borrarCampos(){
     formCheck.removeAttribute("disabled")
     botonCalcular.removeAttribute("disabled")
     formCheck.checked = false;
+    formNombre.focus()
 
     ;
 }
 
 function pagar(){
     alert("¡ "+formNombre.value + " Gracias por comprar nuestros servicios.!")
+    borrarCampos()
 }
 
 

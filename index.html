@@ -32,12 +32,76 @@
         </div>
     </nav>
 
-    <div class="imagen-principal-1" >
+    <!-- <div class="imagen-principal-1" > -->
         <!-- <h2 class="titulo-bienvenida">Bienvenidos</h2> -->
-        <img id="imagen-principal" src="imagenes/carusel3.jpg" alt="Imagen Principal">
-    </div>
+        <!-- <img id="imagen-principal" src="imagenes/carusel3.jpg" alt="Imagen Principal"> -->
+    <!-- </div> -->
 <!-- ACA TERMINA NAVBAR -->
-<!-- ACA EMPIZAN LAS CARDS -->
+
+<!--ACÁ EMPIEZA EL CARRUSEL-->
+
+<div id="conteItemsCarrusel">
+  <div class="itemCarrusel" id="itemCarrusel-1">
+      <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+          <img class="imgC" src="imagenes/carusel3.jpg" alt="carusel-1">
+      </div>
+      <div class="flechasCarrusel">
+          <a href="#itemCarrusel-3">
+              <!--FLECHA IZQ 1-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-atras.png" alt="">
+              </i>
+          </a>
+          <a href="#itemCarrusel-2">
+              <!--FLECHA DER 1-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-adelante.png" alt="">
+              </i>
+          </a>
+      </div>
+  </div>
+  <div class="itemCarrusel" id="itemCarrusel-2">
+      <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+          <img class="imgC" src="imagenes/carusel2.jpg" alt="carusel-2">
+      </div>
+      <div class="flechasCarrusel">
+          <a href="#itemCarrusel-1">
+              <!--FLECHA IZQ 2-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-atras.png" alt="">
+              </i>
+          </a>
+          <a href="#itemCarrusel-3">
+              <!--FLECHA DER 2-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-adelante.png" alt="">
+              </i>
+          </a>
+      </div>
+  </div>
+  <div class="itemCarrusel" id="itemCarrusel-3">
+      <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+          <img class="imgC" src="imagenes/carusel1.jpg" alt="carusel-3">
+      </div>
+      <div class="flechasCarrusel">
+          <a href="#itemCarrusel-2">
+              <!--FLECHA IZQ 3-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-atras.png" alt="">
+              </i>
+          </a>
+          <a href="#itemCarrusel-1">
+              <!--FLECHA DER 3-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-adelante.png" alt="">
+              </i>
+          </a>
+      </div>
+  </div> 
+</div>
+<!--ACÁ TERMINA EL CARRUSEL-->
+
+<!-- ACA EMPIEZAN LAS CARDS -->
 <div class="contenedor-seccion" id="contenedor-seccion">
 <a href="#titulo-servicios" id="titulo-servicios">
   Nuestros servicios
@@ -81,7 +145,8 @@
     <div class="contenedor-seccion" id="contenedor-seccion1">
     <a href="#titulo-form" id="titulo-form">Formulario de cotización</a>
      </div>
-    <div class="fondo">
+    <div class="fondo">  
+    <!-- <section class="custom-container"> -->
     <section>
      
     <div class="input-group mb-3" id="nombre-form">
@@ -126,12 +191,17 @@
 
   <section id="seccion-pagar">
     <h3>Datos de facturacion</h3>
+
       <div class="input-group" id="monto-form" >
+        <p>Factura a nombre de:</p>
     <input type="text" id="nombre-pagar"  readonly>
+        <p>Correo:</p>
     <div class="input-group formulario-pagar" id="monto-form" >
       <input type="text" id="correo-pagar"  readonly>
+        <p>Tipo de servicio:</p>
     <div class="input-group formulario-pagar" id="monto-form" >
       <input type="text" id="servicio-pagar"  readonly>
+        <p>Monto a pagar:</p>
   <div class="input-group" id="monto-form" >
     <input type="text" id="monto"  readonly>
 
@@ -157,6 +227,7 @@
     <script src="javascript.js"></script>
     <script src="/icono.js"></script>
     <script src="menu_h.js"></script>
+    <script src="smooth-scroll.js"></script>
     <!-- <script src="menu-desp.js"></script> -->
 </body>
 </html>

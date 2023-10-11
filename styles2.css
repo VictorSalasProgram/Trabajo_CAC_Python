@@ -11,6 +11,15 @@ body {
     }
 
 
+/* .custom-container {
+    width: 50%;
+    padding: 10px;
+    margin: 20px; 
+    box-sizing: border-box; /* Asegura que el relleno y el borde no aumenten el ancho */
+    /* background-color: #040f1b;
+         
+    } */
+
 
 /*MODIFICANDO!*/
 
@@ -22,7 +31,7 @@ body {
     align-items: center;
     background-color: #040f1b;
     color: whitesmoke;
-    padding: 25px;
+    padding: 15px;
     z-index: 1;
 }
 
@@ -33,7 +42,8 @@ body {
 
 .custom-navbar .navbar-links {
     display: grid;
-    grid-auto-flow: column;
+    /* grid-auto-flow: column; */
+    grid-column: 2;
     gap: 10px;
     padding: 0 5px;/* Ajuste del espacio en los bordes del contenedor de enlaces */
     justify-self: start; /* Ajuste de los enlaces a la izquierda */
@@ -50,6 +60,8 @@ body {
     .navbar-links li {
         margin-left: 1rem;
         list-style: none;
+        /* display: inline-block; */
+        margin-right: -25px; /* Espaciado entre los elementos */
     }
 
 
@@ -76,6 +88,8 @@ body {
     
 
         .navbar-links ul{
+            margin-top: 20px;
+            margin-left: -40px;/*Posicionamiento lista*/
             display: flex;
             align-items: flex-start;
         }
@@ -89,31 +103,57 @@ body {
             }
         }
 
+/*CARRUSEL*/
 
-/*CONTENEDORES DE IMAGEN*/
 
-.imagen-principal-1 {
-    /* position: relative; */
-    
-    display: grid;
-    /* background-color: #040f1b; */
-    grid-template-columns: 1fr; /* Un columna */
-    grid-template-rows: 700px; /* Altura del contenedor padre (ajusta según tus necesidades) */
+#conteItemsCarrusel{   
+    height: 900px;
+    /*Oculta lo que sobra*/
+    overflow: hidden;
     background-color: aqua;
-    color: whitesmoke;
-    padding: 0;
-    z-index: 1;
-    margin:auto;
+}
+
+.imgC{
+    position: absolute;
+    height: 750px;
+    width: 100%;
+    display: flex;    
+    margin: 112px auto 0 auto;
 }
 
 
-/*grid en el contenido no sirve*/
-#imagen-principal{
+.itemCarrusel {
+    /*Toma la altura del elemento padre*/
     height: 100%;
-    width: 100%;
-    display: block;    
-    margin: 0px auto 0 auto;
-    /* margin-top: 200px; */
+    /* height: 750px; */
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    /* background-color: rgb(133, 216, 216); */
+    height: 100%;
+}
+
+.flechasCarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.flecha img{
+    height: 32px;
+    width:32px;
 }
 
 
@@ -239,6 +279,7 @@ posicionamiento, puse el :hover en .custom-navbar a
     justify-content: center;
     padding-top: 10%;
     background-color: #0c2035;
+    margin-top: -115px;
 }
 #titulo-servicios{
     background-color: #040f1b;
@@ -318,7 +359,7 @@ color: aqua;
     background-color: #0056b3;
   }
 
-  /* EMPIZA FORM */
+  /* EMPIEZA FORM */
   #titulo-form{
     color: whitesmoke;
     text-align: center;
@@ -400,8 +441,8 @@ label{
   }
   
   #boton-borrar {
-    background-color: #dc3545; /* Color de fondo rojo */
-    color: #fff; /* Color de texto blanco */
+    background-color: #dc3545; 
+    color: #fff; 
   }
 #boton-calcular{
     background-color: #007bff;
@@ -414,6 +455,7 @@ label{
     height:35%;
     padding-bottom: 5%;
     padding-top: 5%;
+    /* margin: 10px auto; */
     margin: 0 auto;
  display: none;
     
@@ -438,6 +480,16 @@ label{
 
 }
 
+#nombre-pagar , #correo-pagar, #servicio-pagar{
+    text-align: center;
+}
+
+p{
+    color: whitesmoke;
+}
+
+
+
 #monto{
  text-align: center;
 
@@ -445,7 +497,7 @@ label{
 #botonera2 {
     display:block;
     text-align: center;
-    
+    padding-top: 3%;
   }
 
 
@@ -495,7 +547,10 @@ label{
         padding: 12px; /* Reducción del padding */
     }
 
-    
+    .navbar-logo{
+        display: block;
+        margin-left: 10px;
+    }
 
     .navbar-links a {
         display: none;
@@ -510,14 +565,6 @@ label{
         padding: 0 5px; /* Ajuste del espacio entre enlaces */
     }
 
-    /*.navbar-logo {
-        img {
-            height: 20px;
-            width: 20px;
-            max-height: 40px;
-            vertical-align: middle;
-        } */
-    
     
     
     #img{                 /*Modificado: Sombra y animación ícono*/
@@ -539,40 +586,70 @@ label{
         grid-auto-flow: column;
         gap: 50px;
     }
-    
-    
-        .imagen-principal-1 {
-    /* position: relative; */
-    
-    display: grid;
-    /* background-color: #040f1b; */
-    grid-template-columns: 1fr; /* Un columna */
-    grid-template-rows: 500px; /* Altura del contenedor padre (ajusta según tus necesidades) */
-    background-color: aqua;
-    color: whitesmoke;
-    padding: 0;
-    z-index: 1;
-    margin:auto;
-}
 
+    #conteItemsCarrusel{   
+        height: 650px;
+        /*Oculta lo que sobra*/
+        overflow: hidden;
+        background-color: aqua;
+    }
+    
+    .itemCarrusel {
+        /*Toma la altura del elemento padre*/
+        height: 100%;
+        /* height: 600px; */
+        position: relative;
+    }
+    
+    .tarjetaCarrusel{
+        /* background-color: rgb(133, 216, 216); */
+        height: 100%;
+    }
+    
+    
+    .imgC{
+        position: absolute;
+        height: 600px;
+        width: 100%;
+        display: flex;    
+        margin: 90px auto 0 auto;
+    }
+   
 
-/*grid en el contenido no sirve*/
-#imagen-principal{
-    height: 100%;
-    width: 100%;
-    display: block;    
-    margin: 0px auto 0 auto;
-    /* margin-top: 200px; */
-}
+    
+    .flechasCarrusel{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .flecha img{
+        height: 32px;
+        width:32px;
+    }
+    
+    
 
 /*SECCIONES*/
 .contenedor-seccion{
     display: flex;
     justify-content: center;
     padding:0;
-    background-color: #0c2035;
     margin: 0;
+    background-color: #0c2035; 
 }
+
 #titulo-servicios{
     background-color: #040f1b;
     color: whitesmoke;
@@ -622,15 +699,24 @@ label{
 }
 
 /*MENÚ DESPLEGABLE*/
-.navbar-links ul{
+.navbar-links ul {
     display: block;
     position: fixed;
-    top: 88px; 
-    left:-150%;
-    background-color: rgba(34, 34, 34, 1);
+    top: 88px;
+    left: -150%;
     width: 100%;
     height: 100vh;
     right: 0;
+    background: linear-gradient(to bottom right, rgba(34, 34, 34, 0.7), rgba(34, 34, 34, 0.9));
+    backdrop-filter: blur(10px);
+}
+
+.navbar-links ul{
+    margin-top: 20px;
+    margin-left: -40px;/*Posicionamiento lista*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -644,6 +730,7 @@ label{
     padding: 2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     font-size: 1em;
     color: whitesmoke;
@@ -667,8 +754,12 @@ label{
     border: none;}
 
 
+/*Despliegue*/
+
 #check:checked ~ ul {
-    left:0;
+    display: block;
+    left:40px;
+    top: 68px;
     transition: all .25s;
 }
 
@@ -685,6 +776,26 @@ img:hover{
     transition: box-shadow 0.3s;
     }
 
+
+    section{
+        border: 3px solid whitesmoke;
+        width: 70%;
+        height:35%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        
+    }
+
+    /* .custom-container {
+        width: 60%;
+        padding: 20px; /* Añade un relleno si es necesario */
+        /* margin: 0; /* Elimina cualquier margen */
+        /* box-sizing: border-box;  Asegura que el relleno y el borde no aumenten el ancho 
+        background-color: #040f1b;
+         
+        } */ 
+
+
 }
 
 
@@ -693,7 +804,7 @@ img:hover{
 @media (max-width: 768px){
     .custom-navbar{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ; /* Ajustado a una sola columna */;
+        grid-template-columns: 1fr ; /* Ajustado a una sola columna */;
     
         text-align: center; /* Alineación de texto al centro */
         padding: 12px; /* Reducción del padding */       
@@ -701,6 +812,11 @@ img:hover{
 
     .custom-navbar li{
         margin-bottom: 10px;
+    }
+
+    .navbar-logo{
+        display: block;
+        margin-left: 10px;
     }
 
     .contenedor-seccion #titulo-form{
@@ -735,14 +851,104 @@ img:hover{
 
       
 
-    .contenedor-seccion .fondo {
+    /* .custom-container {
         width: 100%;
         padding: 20px; /* Añade un relleno si es necesario */
-        margin: 0; /* Elimina cualquier margen */
-        box-sizing: border-box; /* Asegura que el relleno y el borde no aumenten el ancho */
+        /* margin: 0;  Elimina cualquier margen 
+        box-sizing: border-box;  Asegura que el relleno y el borde no aumenten el ancho 
         background-color: #040f1b;
          
+        } */
+
+        .contenedor-seccion .fondo {
+            width: 100%;
+            padding: 20px; /* Añade un relleno si es necesario */
+            margin: 0; /* Elimina cualquier margen */
+            box-sizing: border-box; /* Asegura que el relleno y el borde no aumenten el ancho */
+            background-color: #040f1b;
+             
+            }
+    
+        #conteItemsCarrusel{
+            /*modificar tamaño desde elemento padre*/   
+            height: 390px;
+            /*Oculta lo que sobra*/
+            overflow: hidden;
+            background-color: aqua;
         }
+        
+        .itemCarrusel {
+            /*Toma la altura del elemento padre*/
+            height: 100%;
+            /* height: 300px; */
+            position: relative;
+        }
+        
+        .tarjetaCarrusel{
+            /* background-color: rgb(133, 216, 216); */
+            height: 100%;
+        }
+        
+        .imgC{
+            position: absolute;
+            height: 300px;
+            width: 100%;
+            display: flex;    
+            margin: 90px auto 0 auto;
+        }
+        
+        
+        .flechasCarrusel{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;    
+            display: flex;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    
+        
+        a{
+            text-decoration: none;
+        }
+        
+        .flecha img{
+            height: 32px;
+            width:32px;
+        }
+
+
+        section{
+            border: 3px solid whitesmoke;
+            width: 100%;
+            height:35%;
+            padding-bottom: 5%;
+            padding-top: 5%;
+            
+        }
+        
+        /* img{
+            width: 100%;
+            height: 100%;
+        } */
+        
+        
+    
+
+        /* #titulo-servicios{
+            background-color: #040f1b;
+            color: whitesmoke;
+            text-align: center;
+            margin: 20px auto 0 auto;
+            width: 100%;
+            font-size: 250%;
+            text-decoration: none;
+            
+        } */
+
     
 }
 
