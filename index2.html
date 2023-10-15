@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/imagenes/icono.ico" />
+    <title>Trabajo Practico Integrador PYTHON</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--ACA EMPIEZA LA NAVBAR-->
+    <nav class="navbar navbar-expand-lg custom-navbar" id="contenedor-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/imagenes/icono2.png" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link" href="#accordionPanelsStayOpenExample"
+              >Servicios</a
+            >
+            <a class="nav-link" href="#nombre-form">Cotizaciones</a>
+            <a class="nav-link" aria-disabled="true">Contactanos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ACA TERMINA LA NAVBAR-->
+    <!-- ACA EMPIEZA EL CARUSEL-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/imagenes/carusel3.jpg"
+            class="d-block w-100"
+            alt="Imagen de candado"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Bienvenidos</h2>
+            <p>Tu seguridad como prioridad.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/imagenes/carusel2.jpg"
+            class="d-block w-100"
+            alt="Imagen de ciberseguridad"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/imagenes/carusel1.jpg"
+            class="d-block w-100"
+            alt="Imagen de ciberseguridad"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ACA TERMINA EL CARUSEL-->
+
+    <!--ACA EMPIEZA EL ACORDEON-->
+
+    <div class="fondo">
+      <h2 id="titulo-servicios">Servicios</h2>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Corporativo
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+          >
+            <div class="accordion-body">
+              Ofrecemos servicios a nivel corporativo, que incluyen
+              capacitaciones de seguridad informática que pueden combinarse con
+              ataques simulados de phishing. Unase a nuestros mas de 65.000
+              clientes para administrar el continuo problema de la ingeniería
+              social.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Público
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              Servicio destinado a instituciones públicas, escuelas y publico en
+              general que busca conscientizar a un nivel más profundo sobre la
+              ciberseguridad.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Servicios Comunitarios
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              Servicios destinados a proveer información de interés público y
+              evaluar los conocimientos generales de la población.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ACA TERMINA EL ACORDEON-->
+    <!--EMPIEZAN LAS CARDS-->
+    <!--   <div class="row custom-cards">
+              <div class="col-sm-3 mb-3 mb-sm-0">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title" id="card-title1">Mesual</h5>
+                    <p class="card-text">Descubre la comodidad y flexibilidad de nuestro paquete mensual. Con este plan, tendrás acceso completo a nuestro servicio durante un mes entero. Disfruta de todas las características y ventajas que ofrecemos mientras mantienes la libertad de decidir mes a mes si deseas continuar. Ideal para aquellos que buscan probar nuestro servicio o necesitan una solución temporal.</p>
+                    <a href="#" class="btn btn-primary">Mas informacion</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title" id="card-title2">Semestral</h5>
+                    <p class="card-text">Nuestro paquete semestral es la elección perfecta para aquellos que desean comprometerse a largo plazo y ahorrar. Con este plan, obtendrás acceso continuo a nuestro servicio durante seis meses completos. Además de todas las funciones, recibirás un descuento especial como recompensa por tu compromiso. Asegura tu acceso ininterrumpido y ahorra en grande..</p>
+                    <a href="#" class="btn btn-primary">Mas informacion</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title" id="card-title3">Anual</h5>
+                    <p class="card-text">El paquete anual es nuestra opción premium para usuarios comprometidos. Con esta suscripción, disfrutarás de nuestro servicio durante todo un año. Obtén todas las funciones avanzadas, actualizaciones y soporte prioritario. Ahorra aún más con un descuento exclusivo para aquellos que se comprometen a largo plazo. Garantiza tu acceso continuo y disfruta de la tranquilidad de estar cubierto durante todo el año.</p>
+                    <a href="#" class="btn btn-primary">Mas informacion</a>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+
+    <!--TERMINAN LAS CARDS-->
+    <!--ACA EMPIEZA EL FORM-->
+    <form>
+    <div class="fondo">
+      <h2 id="titulo-form">Pedido de Información</h2>
+      <div id="nombre-form">
+        <label>Nombre: </label> <br />
+        <input
+          type="text"
+          class="form-control"
+          id="form-name"
+          placeholder="Escribe tu nombre"
+          aria-label="Username"
+        />
+      </div>
+
+      <div id="telefono-form">
+        <label id="label-space">Teléfono: </label> <br />
+        <input
+          type="tel"
+          class="form-control"
+          placeholder="Escribe tu telefono, incluyendo codigo de país y ciudad"
+          aria-label="Recipient's telephone"
+          id="form-telefono"
+        />
+      </div>
+      <div id="email-form">
+        <label>Correo: </label>  <br />
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Escribe tu email"
+          aria-label="Recipient's username"
+          id="form-correo"
+        />
+      </div>
+
+      <div id="email-form">
+      <label> Selecciona un servicio:</label> <br />
+      
+      <select
+        id="select"
+      >
+        <option value="1">Privado</option>
+        <option value="2">Público</option>
+        <option value="3">Servicios comunitarios</option>
+      </select>
+    </div>
+      <!--<select class="form-select" id="select2" aria-label="Default select example">
+        <option selected>Selecciona un paquete</option>
+        <option value="1">Mensual</option>
+        <option value="2">Semestral</option>
+        <option value="3">Anual</option>
+      </select>-->
+
+      <div id="coment-form"> 
+        <label class="label"> Deje su comentario: </label> <br />
+        <input
+          type="textarea"
+          class="form-control"
+        />
+      </div>
+      <div id="contenedor-check">
+        <div class="form-check" id="check-form">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Aceptar
+            <a href="/vistas/terminos.html" target="_blank"
+              >Terminos & condiciones.</a
+            >
+          </label>
+        </div>
+      </div>
+
+      <div id="botonera">
+        <button class="btn btn-danger" id="boton-borrar" type="button">
+          Borrar
+        </button>
+        <input
+          class="btn btn-primary"
+          type="button"
+          value="Calcular"
+          id="boton-calcular"
+        />
+      </div>
+    </form>
+      <!-- ACA TERMINA EL FORM-->
+      <!--EMPIEZA QUIENES SOMOS-->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img
+              src="/imagenes/card1.jpg"
+              class="img-fluid rounded-start"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body2">
+              <h5 class="card-title" id="card-title4">¿Quienes somos?</h5>
+              <p class="card-text card-text-custom">
+                Somos una empresa de ciberseguridad comprometida con la
+                protección de su mundo digital. En [Nombre de la Empresa], nos
+                especializamos en brindar soluciones avanzadas de capacitación
+                para salvaguardar sus datos, su privacidad y su tranquilidad en
+                línea. Con un equipo de expertos altamente capacitados y
+                apasionados por la seguridad cibernética, estamos aquí para
+                enfrentar las amenazas digitales más desafiantes. Nuestra misión
+                es simple pero poderosa: protegerlo a usted y a su negocio en un
+                mundo cada vez más conectado y expuesto a riesgos cibernéticos.
+                Confíe en nosotros para estar un paso adelante de las amenazas y
+                garantizar que su presencia en línea esté siempre segura.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--TERMINA QUIENES SOMOS-->
+      <!--ACA EMPIEZA EL FOOTER-->
+      <ul class="nav justify-content-center" id="footer">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/vistas/terminos.html"
+            >Terminos & condiciones</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <!--ACA TERMINA EL FOOTER-->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+
+      <script src="javascript.js"></script>
+    </div>
+  </body>
+</html>

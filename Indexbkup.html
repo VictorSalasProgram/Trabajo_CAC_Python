@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" type="image/png" href="/imagenes/icono2.png">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body> 
+  <!-- ACA EMPIEZA NAVBAR -->
+    <nav class="custom-navbar">
+        <div class="navbar-logo">
+            <a href="index.html"><img id="img" src="imagenes/icono2.png" alt="Logo"></a>
+            <script src="icono.js"></script>
+        </div>
+        <div class="navbar-links">
+          <input type="checkbox" id="check">    
+          <label for="check" class="checkbtn">
+            <i class="menu-icon"><img id="menu_h" src="menu_h.png" alt=""></i>
+          </label>
+            <ul>
+              
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="#contenedor-seccion" class="nav-link">Servicios</a></li>
+                <li><a href="#contenedor-seccion1" class="nav-link">Cotizaciones</a></li>
+                <li><a href="#" class="nav-link">Contáctanos</a></li>
+              
+            </ul>
+            <script src="menu.js"></script>
+        </div>
+    </nav>
+
+    <!-- <div class="imagen-principal-1" > -->
+        <!-- <h2 class="titulo-bienvenida">Bienvenidos</h2> -->
+        <!-- <img id="imagen-principal" src="imagenes/carusel3.jpg" alt="Imagen Principal"> -->
+    <!-- </div> -->
+<!-- ACA TERMINA NAVBAR -->
+
+<!--ACÁ EMPIEZA EL CARRUSEL-->
+
+<div id="conteItemsCarrusel">
+  <div class="itemCarrusel" id="itemCarrusel-1">
+      <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+          <img class="imgC" src="imagenes/carusel3.jpg" alt="carusel-1">
+      </div>
+      <div class="flechasCarrusel">
+          <a href="#itemCarrusel-3">
+              <!--FLECHA IZQ 1-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-atras.png" alt="">
+              </i>
+          </a>
+          <a href="#itemCarrusel-2">
+              <!--FLECHA DER 1-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-adelante.png" alt="">
+              </i>
+          </a>
+      </div>
+  </div>
+  <div class="itemCarrusel" id="itemCarrusel-2">
+      <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+          <img class="imgC" src="imagenes/carusel2.jpg" alt="carusel-2">
+      </div>
+      <div class="flechasCarrusel">
+          <a href="#itemCarrusel-1">
+              <!--FLECHA IZQ 2-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-atras.png" alt="">
+              </i>
+          </a>
+          <a href="#itemCarrusel-3">
+              <!--FLECHA DER 2-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-adelante.png" alt="">
+              </i>
+          </a>
+      </div>
+  </div>
+  <div class="itemCarrusel" id="itemCarrusel-3">
+      <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+          <img class="imgC" src="imagenes/carusel1.jpg" alt="carusel-3">
+      </div>
+      <div class="flechasCarrusel">
+          <a href="#itemCarrusel-2">
+              <!--FLECHA IZQ 3-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-atras.png" alt="">
+              </i>
+          </a>
+          <a href="#itemCarrusel-1">
+              <!--FLECHA DER 3-->
+              <i class="flecha">
+                  <img src="imagenes/flecha-adelante.png" alt="">
+              </i>
+          </a>
+      </div>
+  </div> 
+</div>
+<!--ACÁ TERMINA EL CARRUSEL-->
+
+<!-- ACA EMPIEZAN LAS CARDS -->
+<div class="contenedor-seccion" id="contenedor-seccion">
+<a href="#titulo-servicios" id="titulo-servicios">
+  Nuestros servicios
+</a>
+</div>
+    <div class="contendor-cards" id="servicios">
+        <!--BLOQUE 1-->
+        <div class="bloque" >
+          <div class="contendor">
+            <h5 class="titulo-bloque">
+             <button>Mensual</button>
+            </h5>
+            <p class="texto-bloque">Descubre la comodidad y flexibilidad de nuestro paquete mensual. Con este plan, tendrás acceso completo a nuestro servicio durante un mes entero. Disfruta de todas las características y ventajas que ofrecemos mientras mantienes la libertad de decidir mes a mes si deseas continuar. Ideal para aquellos que buscan probar nuestro servicio o necesitan una solución temporal.</p>
+            <a href="#" class="boton-bloque">Mas informacion</a>
+          </div>
+        </div>
+        <!--BLOQUE 2-->
+        <div class="bloque">
+          <div class="contendor">
+            <h5 class="titulo-bloque">
+              <button>Semestral</button>
+              </h5>
+            <p class="texto-bloque">Nuestro paquete semestral es la elección perfecta para aquellos que desean comprometerse a largo plazo y ahorrar. Con este plan, obtendrás acceso continuo a nuestro servicio durante seis meses completos. Además de todas las funciones, recibirás un descuento especial como recompensa por tu compromiso. Asegura tu acceso ininterrumpido y ahorra en grande..</p>
+            <a href="#" class="boton-bloque">Mas informacion</a>
+          </div>
+        </div>
+        <!--BLOQUE 3-->
+        <div class="bloque">
+          <div class="contendor">
+            <h5 class="titulo-bloque">
+              <button>Anual</button>
+            </h5>
+            <p class="texto-bloque">El paquete anual es nuestra opción premium para usuarios comprometidos. Con esta suscripción, disfrutarás de nuestro servicio durante todo un año. Obtén todas las funciones avanzadas, actualizaciones y soporte prioritario. Ahorra aún más con un descuento exclusivo para aquellos que se comprometen a largo plazo. Garantiza tu acceso continuo y disfruta de la tranquilidad de estar cubierto durante todo el año.</p>
+            <a href="#" class="boton-bloque">Mas informacion</a>
+          </div>
+        </div>
+
+      </div>
+    <!-- ACA TERMINAN LAS CARDS -->
+    <!-- EMPIEZA EL FORM -->
+    <div class="contenedor-seccion" id="contenedor-seccion1">
+    <a href="#titulo-form" id="titulo-form">Formulario de cotización</a>
+     </div>
+    <div class="fondo">  
+    <!-- <section class="custom-container"> -->
+    <section>
+     
+    <div class="input-group mb-3" id="nombre-form">
+      <span class="input-group-text" id="basic-addon1">Nombre: </span>
+      <input type="text"  class="form-control" id="form-name" placeholder="Escribe tu nombre" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    
+    <div class="input-group mb-3 " id="email-form">
+      <span class="input-group-text" id="basic-addon2">Correo: </span>
+      <input type="email" class="form-control" placeholder="Escribe tu email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="form-correo">
+    </div>
+    
+    <select class="form-select" id="select" aria-label="Default select example">
+      <option selected>Selecciona un servicio</option>
+      <option value="1">Mensual</option>
+      <option value="2">Semestral</option>
+      <option value="3">Anual</option>
+    </select>
+    <!-- <select class="form-select" id="select2" aria-label="Default select example">
+      <option selected>Selecciona un paquete</option>
+      <option value="1">Mensual</option>
+      <option value="2">Semestral</option>
+      <option value="3">Anual</option>
+    </select>
+     -->
+
+
+    <div id="contenedor-check">
+    <div class="form-check" id="check-form">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Aceptar <a href="/vistas/terminos.html" target="_blank">Terminos & condiciones.</a>
+      </label>
+    </div>
+  </div>
+
+  <div id="botonera">
+    <button class="custom-button" id="boton-borrar" type="button">Borrar</button>
+    <input class="custom-button" type="button" value="Calcular" id="boton-calcular">
+  </div>
+
+
+  <section id="seccion-pagar">
+    <h3>Datos de facturacion</h3>
+<<<<<<< HEAD
+
+      <div class="input-group" id="monto-form" >
+        <p>Factura a nombre de:</p>
+    <input type="text" id="nombre-pagar"  readonly>
+        <p>Correo:</p>
+    <div class="input-group formulario-pagar" id="monto-form" >
+      <input type="text" id="correo-pagar"  readonly>
+        <p>Tipo de servicio:</p>
+    <div class="input-group formulario-pagar" id="monto-form" >
+      <input type="text" id="servicio-pagar"  readonly>
+        <p>Monto a pagar:</p>
+=======
+    
+      <div class="input-group" id="monto-form" >
+        <p>Factura a nombre de:</p>
+    <input type="text" id="nombre-pagar"  readonly>
+    <p>Correo:</p>
+    <div class="input-group formulario-pagar" id="monto-form" >
+      <input type="text" id="correo-pagar"  readonly>
+      <p>Tipo de servicio:</p>
+    <div class="input-group formulario-pagar" id="monto-form" >
+      <input type="text" id="servicio-pagar"  readonly>
+      <p>Monto a pagar:</p>
+>>>>>>> e8ad24767debf995a78cb514e202fac8ce2c4685
+  <div class="input-group" id="monto-form" >
+    <input type="text" id="monto"  readonly>
+
+  </div>
+  <div id="botonera2">
+    <button class="custom-button" id="boton-pagar" type="button">Pagar</button>
+  </div>
+</section>
+    </section>
+    </div>
+
+
+    <!-- TERMINA EL FORM -->
+<!-- FOOTER -->
+<div class="contendor-footer">
+      <ul class="lista-footer">
+        <li><a href="/vistas/terminos.html">Terminos & condiciones</a></li>
+        <li><a href="#">Desarrolladores</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+    <script src="javascript.js"></script>
+    <script src="/icono.js"></script>
+    <script src="menu_h.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <!-- <script src="menu-desp.js"></script> -->
+</body>
+</html>
