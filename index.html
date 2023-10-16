@@ -261,7 +261,7 @@
         />
       </div>
       <div id="contenedor-check">
-        <div class="form-check" id="check-form">
+        <div style="margin-top:1rem ;" class="form-check" id="check-form">
           <input
             class="form-check-input"
             type="checkbox"
@@ -269,10 +269,7 @@
             id="flexCheckDefault"
           />
           <label class="form-check-label" for="flexCheckDefault">
-            Aceptar
-            <a href="/vistas/terminos.html" target="_blank"
-              >Terminos & condiciones.</a
-            >
+            Aceptar <a href="/vistas/terminos.html" target="_blank">Terminos & condiciones.</a>
           </label>
         </div>
       </div>
@@ -283,13 +280,47 @@
         </button>
         <input
           class="btn btn-primary"
-          type="button"
-          value="Calcular"
+          type="submit"
+          value="Enviar"
           id="boton-calcular"
+          style="margin-left: 1rem;"
         />
       </div>
     </form>
       <!-- ACA TERMINA EL FORM-->
+      <h2 style="margin-top: 2rem;" id="titulo-form">Pedido de cotización</h2>
+
+    <div class="container">
+        <form id="miFormulario">
+            <div class="columna">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo"><br>
+            </div>
+            <div class="columna">
+                <label for="empresa">Empresa:</label><br>
+                <input type="text" id="empresa" name="empresa"><br>
+                <label for="empleados">Cantidad de empleados:</label><br>
+                <input type="number" id="empleados" name="empleados"><br>
+            </div>
+            <div class="columna">
+                <label for="servicio">Selecciona un servicio:</label><br>
+                <select id="servicio" name="servicio">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="corporativo">Corporativo</option>
+                    <option value="publico">Público</option>
+                    <option value="comunitario">Servicio Comunitario</option>
+                </select><br>
+            </div>
+            <div class="botones">
+                <button type="reset">Borrar</button><br>
+                <button type="submit">Cotizar</button><br>
+            </div>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
       <!--EMPIEZA QUIENES SOMOS-->
       <div class="card mb-3">
         <div class="row g-0">

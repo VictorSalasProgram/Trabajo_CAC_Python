@@ -3,71 +3,74 @@ body {
     padding: 0;
 }
 
-.custom-navbar{
+.custom-navbar {
     background-color: #0c2035;
-    height: 5em;   
+    height: 5em;
 }
 
 .custom-navbar a {
     color: whitesmoke;
-    font-size: 1.5em;    
+    font-size: 1.5em;
 }
 
-#contenedor-navbar{
+#contenedor-navbar {
     position: fixed;
     z-index: 100;
     width: 100%;
 }
 
 /*ACA TERMINA NAVBAR*/
-#seccion-formulario{
+#seccion-formulario {
     background-color: 2c475f;
-    
+
 }
 
-#titulo-servicios{
+#titulo-servicios {
     color: whitesmoke;
     text-align: center;
     margin: 2em;
 }
 
 .accordion .accordion-header {
-    background-color: #0c2035 ;
+    background-color: #0c2035;
     color: whitesmoke;
 }
 
 .accordion-button {
-    color:whitesmoke;
+    color: whitesmoke;
 }
 
 .accordion .accordion-body {
-    background-color: #0c2035; 
+    background-color: #0c2035;
     color: whitesmoke;
 }
 
 .accordion .accordion-button.collapsed {
-    background-color: #0c2035; 
+    background-color: #0c2035;
     color: whitesmoke;
 }
-.accordion-body{
+
+.accordion-body {
     height: 20em;
 }
 
 /* Estilos para títulos de acordeones en pantallas más pequeñas */
 @media (max-width: 768px) {
     .accordion-button {
-      font-size: 16px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        font-size: 16px;
+        /* Tamaño de fuente más pequeño para pantallas pequeñas */
     }
-  }
-  
-  /* Estilos para el contenido de acordeones en pantallas más pequeñas */
-  @media (max-width: 768px) {
+}
+
+/* Estilos para el contenido de acordeones en pantallas más pequeñas */
+@media (max-width: 768px) {
     .accordion-body {
-      font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        font-size: 14px;
+        /* Tamaño de fuente más pequeño para pantallas pequeñas */
     }
-  }
-  
-.custom-cards{
+}
+
+.custom-cards {
     background-color: #0c2035;
     text-align: center;
     justify-content: center;
@@ -75,36 +78,41 @@ body {
     width: 100%;
 }
 
-.card-body{
+.card-body {
     background-color: #2c475f;
     height: 23em;
-    max-height: 23em; 
+    max-height: 23em;
 
 }
+
 @media (max-width: 768px) {
     .card-body {
-        height: auto; /* Deja que la altura se ajuste automáticamente al contenido */
-        font-size: 14px; /* Reducir el tamaño del texto */
+        height: auto;
+        /* Deja que la altura se ajuste automáticamente al contenido */
+        font-size: 14px;
+        /* Reducir el tamaño del texto */
     }
 }
+
 p {
     color: whitesmoke;
-   
+
 }
 
-#card-title{
+#card-title {
     color: whitesmoke;
 }
 
 /* */
 
-#nombre-form{
+#nombre-form {
     width: 30%;
     margin: 0 auto;
     padding-top: 2em;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 #email-form {
     width: 30%;
     margin: 0 auto;
@@ -119,81 +127,146 @@ p {
     margin-bottom: 10px;
 }
 
-.fondo{
-    background-color: #0c2035; /*#2c475f*/
+.fondo {
+    background-color: #0c2035;
+    /*#2c475f*/
     padding-top: 3em;
 }
 
-#titulo-form{
+#titulo-form {
     color: whitesmoke;
     text-align: center;
-    
+
 }
-#coment-form{
+
+#coment-form {
     width: 30%;
     margin: 0 auto;
 }
 
-#coment-form input{
+#coment-form input {
     height: 80px;
 }
 
-.label{
+.label {
     text-align: center;
     margin: 0auto;
 }
 
-#select{    
+#select {
     border-radius: 5px;
     width: 100%;
     margin: auto;
     height: 40px;
 }
-label{
+
+label {
     color: whitesmoke;
 }
 
-#contenedor-check{
+#contenedor-check {
     display: block;
     margin: 0 auto;
-    width: 18%;
+    width: 20%;
     margin-bottom: 2em;
 }
 
-#check-form{
+#check-form {
     color: whitesmoke;
 }
 
-.card-body2{
+.card-body2 {
     background-color: #2c475f;
-   height: 100%;
+    height: 100%;
 
 }
 
-#card-title4{
+#card-title4 {
     padding-top: 0.2em;
     color: whitesmoke;
     font-size: 3em;
     text-align: center;
 }
 
-.card-text-custom{
-    color:whitesmoke;
+.card-text-custom {
+    color: whitesmoke;
     padding: 0 3em;
     font-size: 1.3em;
     margin-top: 2em;
 }
 
-#botonera{
+#botonera {
     text-align: center;
     padding-bottom: 2em;
 }
 
-#footer{
+#footer {
     background-color: #2c475f;
     height: 5em;
 }
 
-#footer a{
+#footer a {
     color: whitesmoke;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.columna {
+    flex-basis: calc(100% / 3);
+}
+
+.container form input,
+form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.botones {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.container button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+}
+
+.container button[type=reset] {
+    background-color: #f44336;
+}
+
+.container button[type=submit] {
+    background-color: #4CAF50;
+}
+
+#resultado {
+    text-align: left;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 30%;
+    margin: 0 auto;
+}
+
+#resultado p {
+    font-size: 18px;
+    line-height: 1.6;
 }
