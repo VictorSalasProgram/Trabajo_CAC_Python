@@ -101,45 +101,67 @@
 </div>
 <!--ACÁ TERMINA EL CARRUSEL-->
 
+<div class="cuerpo">
+
 <!-- ACA EMPIEZAN LAS CARDS -->
+<div class="cards">
 <div class="contenedor-seccion" id="contenedor-seccion">
 <a href="#titulo-servicios" id="titulo-servicios">
   Nuestros servicios
 </a>
 </div>
-    <div class="contendor-cards" id="servicios">
-        <!--BLOQUE 1-->
-        <div class="bloque" >
-          <div class="contendor">
-            <h5 class="titulo-bloque">
-             <button>Mensual</button>
-            </h5>
-            <p class="texto-bloque">Descubre la comodidad y flexibilidad de nuestro paquete mensual. Con este plan, tendrás acceso completo a nuestro servicio durante un mes entero. Disfruta de todas las características y ventajas que ofrecemos mientras mantienes la libertad de decidir mes a mes si deseas continuar. Ideal para aquellos que buscan probar nuestro servicio o necesitan una solución temporal.</p>
-            <a href="#" class="boton-bloque">Mas informacion</a>
-          </div>
-        </div>
-        <!--BLOQUE 2-->
-        <div class="bloque">
-          <div class="contendor">
-            <h5 class="titulo-bloque">
-              <button>Semestral</button>
-              </h5>
-            <p class="texto-bloque">Nuestro paquete semestral es la elección perfecta para aquellos que desean comprometerse a largo plazo y ahorrar. Con este plan, obtendrás acceso continuo a nuestro servicio durante seis meses completos. Además de todas las funciones, recibirás un descuento especial como recompensa por tu compromiso. Asegura tu acceso ininterrumpido y ahorra en grande..</p>
-            <a href="#" class="boton-bloque">Mas informacion</a>
-          </div>
-        </div>
-        <!--BLOQUE 3-->
-        <div class="bloque">
-          <div class="contendor">
-            <h5 class="titulo-bloque">
-              <button>Anual</button>
-            </h5>
-            <p class="texto-bloque">El paquete anual es nuestra opción premium para usuarios comprometidos. Con esta suscripción, disfrutarás de nuestro servicio durante todo un año. Obtén todas las funciones avanzadas, actualizaciones y soporte prioritario. Ahorra aún más con un descuento exclusivo para aquellos que se comprometen a largo plazo. Garantiza tu acceso continuo y disfruta de la tranquilidad de estar cubierto durante todo el año.</p>
-            <a href="#" class="boton-bloque">Mas informacion</a>
-          </div>
-        </div>
 
+<div class="contenedor">
+
+  <!--BLOQUE-1-->
+  <details class="details">
+      <summary class="custom-summary">
+          Mensual
+      <!-- <h5 id="titulo-1">
+          Mensual
+      </h5>-->
+      </summary>
+      <div class="acordeon">
+          <p>
+              Descubre la comodidad y flexibilidad de nuestro paquete mensual. 
+              Con este plan, tendrás acceso completo a nuestro servicio durante un mes entero. 
+              Disfruta de todas las características y ventajas que ofrecemos mientras mantienes la libertad de decidir mes a mes si deseas continuar. 
+              Ideal para aquellos que buscan probar nuestro servicio o necesitan una solución temporal.
+          </p>
       </div>
+  </details>    
+
+  <!--BLOQUE-2-->
+  <details class="details">
+      <summary class="custom-summary">
+          Semestral
+      </summary>
+      <div class="acordeon">
+          <p>
+              Nuestro paquete semestral es la elección perfecta para aquellos que desean comprometerse a largo plazo y ahorrar. 
+              Con este plan, obtendrás acceso continuo a nuestro servicio durante seis meses completos. Además de todas las funciones, recibirás un descuento especial como recompensa por tu compromiso.
+              Asegura tu acceso ininterrumpido y ahorra en grande..
+          </p>            
+      </div>
+  </details>
+
+  <!--BLOQUE-3-->
+  <details class="details">
+      <summary class="custom-summary">
+          Anual
+      </summary>
+      <div class="acordeon">
+          <p>
+              El paquete anual es nuestra opción premium para usuarios comprometidos. 
+              Con esta suscripción, disfrutarás de nuestro servicio durante todo un año. Obtén todas las funciones avanzadas, actualizaciones y soporte prioritario. 
+              Ahorra aún más con un descuento exclusivo para aquellos que se comprometen a largo plazo. 
+              Garantiza tu acceso continuo y disfruta de la tranquilidad de estar cubierto durante todo el año.
+          </p>            
+      </div>
+  </details>
+</div> 
+</div>  
+
     <!-- ACA TERMINAN LAS CARDS -->
     <!-- EMPIEZA EL FORM -->
     <div class="contenedor-seccion" id="contenedor-seccion1">
@@ -191,7 +213,6 @@
 
   <section id="seccion-pagar">
     <h3>Datos de facturacion</h3>
-<<<<<<< HEAD
 
       <div class="input-group" id="monto-form" >
         <p>Factura a nombre de:</p>
@@ -203,19 +224,6 @@
     <div class="input-group formulario-pagar" id="monto-form" >
       <input type="text" id="servicio-pagar"  readonly>
         <p>Monto a pagar:</p>
-=======
-    
-      <div class="input-group" id="monto-form" >
-        <p>Factura a nombre de:</p>
-    <input type="text" id="nombre-pagar"  readonly>
-    <p>Correo:</p>
-    <div class="input-group formulario-pagar" id="monto-form" >
-      <input type="text" id="correo-pagar"  readonly>
-      <p>Tipo de servicio:</p>
-    <div class="input-group formulario-pagar" id="monto-form" >
-      <input type="text" id="servicio-pagar"  readonly>
-      <p>Monto a pagar:</p>
->>>>>>> e8ad24767debf995a78cb514e202fac8ce2c4685
   <div class="input-group" id="monto-form" >
     <input type="text" id="monto"  readonly>
 
@@ -241,7 +249,9 @@
     <script src="javascript.js"></script>
     <script src="/icono.js"></script>
     <script src="menu_h.js"></script>
-    <script src="smooth-scroll.js"></script>
+    <script src="acordeon.js"></script>
     <!-- <script src="menu-desp.js"></script> -->
+  
+  </div>
 </body>
 </html>

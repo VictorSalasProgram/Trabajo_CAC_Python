@@ -10,6 +10,9 @@ body {
     background-color: #0c2035;
     }
 
+.cuerpo{
+    background-color: #0c2035; 
+}
 
 /* .custom-container {
     width: 50%;
@@ -273,7 +276,9 @@ posicionamiento, puse el :hover en .custom-navbar a
 
 
 /* CARDS */
-
+.cards{
+    background-color:#0c2035; ;
+}
 .contenedor-seccion{
     display: flex;
     justify-content: center;
@@ -296,7 +301,92 @@ posicionamiento, puse el :hover en .custom-navbar a
 color: aqua;
 }
 
-.contendor-cards {
+
+/* Para la sección del contenedor */
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribuye los contenedores horizontalmente */
+    margin-top: 20px;
+}
+
+
+
+/* Para cada contenedor individual */
+.details {
+    background-color: #040f1b;
+    color: white;
+    padding: .5rem;
+    border-radius: 6px;
+    margin: .5rem;
+    cursor: pointer;
+    border: 2px solid white;
+    width: 30%; /* Ancho fijo para cada contenedor */
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contenedor .details[open] > .acordeon {
+    display: block;
+  }
+
+
+/*CONTENIDO*/
+.custom-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 120px;
+
+    padding: 5px 10px;
+    background-color: #040f1b;
+    color: #fff;
+    border-radius: .5rem;
+    transition: box-shadow 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    overflow: hidden; /* Evita desbordamiento */
+    
+    white-space: nowrap; /* Evita el salto de línea */
+    flex: 1; /* Ajusta el ancho del contenido */
+}
+
+.custom-summary:hover {
+    border-radius: .5em;
+    color: wheat;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px #50ffff;
+    transition: box-shadow 0.3s;
+    background-color: none;
+    background-color: #007bff;
+    border: none;
+    padding: 5px 20px;
+}
+
+.custom-summary:focus {
+    outline: none;
+}
+
+.acordeon p {
+    margin-bottom: 20px; /* Aumenta la separación entre renglones */
+    text-indent: 20px; /* Sangría al inicio de cada párrafo */
+    line-height: 1.5; /* Ajusta la altura de línea para separar los renglones */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+
+.acordeon {
+    padding: 20px; /* Espaciado dentro del contenedor */
+}
+
+
+
+
+/* .contendor-cards {
     padding-top: 5%;
     display: flex;
     justify-content: space-between;
@@ -321,19 +411,19 @@ color: aqua;
     background-color: #040f1b;
     /* font-size: 5rem;
     padding: 5px 10px; */
-    border: 2px solid #040f1b;
+    /* border: 2px solid #040f1b;
     border-radius: .5rem;
     /* width: 110px; 
     height: 30px; */
-    transition: box-shadow 0.3s;
+    /* transition: box-shadow 0.3s;
     z-index: 1;
     color: wheat;
     font-family: sans-serif;
     font-size: 1.5rem;
-  }
+  } */ 
 
 
-  .titulo-bloque {
+  /* .titulo-bloque {
     font-size: 1.5rem;
     color: whitesmoke;
     text-align: center;
@@ -357,7 +447,7 @@ color: aqua;
   
   .boton-bloque:hover {
     background-color: #0056b3;
-  }
+  }  */
 
   /* EMPIEZA FORM */
   #titulo-form{
@@ -479,16 +569,6 @@ label{
     text-align: center;
 
 }
-#nombre-pagar , #correo-pagar, #servicio-pagar{
-    text-align: center;
-}
-
-p{
-    color: whitesmoke;
-}
-
-
-
 
 #nombre-pagar , #correo-pagar, #servicio-pagar{
     text-align: center;
@@ -508,13 +588,11 @@ p{
     display:block;
     text-align: center;
     padding-top: 3%;
-<<<<<<< HEAD
-=======
-    
->>>>>>> e8ad24767debf995a78cb514e202fac8ce2c4685
   }
 
-
+  #contenedor-seccion1{
+    margin-top: 20px;
+}
 /* TERMINA FORM */
   /* FOOTER */
   .contendor-footer{
@@ -790,16 +868,6 @@ img:hover{
     transition: box-shadow 0.3s;
     }
 
-
-    section{
-        border: 3px solid whitesmoke;
-        width: 70%;
-        height:35%;
-        padding-bottom: 5%;
-        padding-top: 5%;
-        
-    }
-
     /* .custom-container {
         width: 60%;
         padding: 20px; /* Añade un relleno si es necesario */
@@ -874,6 +942,11 @@ img:hover{
          
         } */
 
+        
+        #contenedor-seccion1{
+            margin-top: 50px;
+        }
+
         .contenedor-seccion .fondo {
             width: 100%;
             padding: 20px; /* Añade un relleno si es necesario */
@@ -944,6 +1017,84 @@ img:hover{
             
         }
         
+        
+
+            .cards{
+                background-color: #0c2035;
+            }
+        
+            .contenedor{
+                display: flex;
+                flex-direction: column;
+                background-color: #0c2035;
+            }
+        
+            /*CONTENEDOR*/
+            .details {
+                display: flex;
+                flex-direction: column; /* Cambiamos la dirección del flexbox para apilar verticalmente */
+                align-items: stretch; /* Ajusta el ancho de los elementos */
+                background-color: #040f1b;
+                color: white;
+                padding: 1rem .4rem;
+                border-radius: 6px;
+                margin: .5rem 0px;
+                cursor: pointer;
+                border: 2px solid white;
+                width: 100%;
+                box-sizing: border-box; /* Incluye padding y border en el ancho */
+                margin-right: 0; /* Eliminamos el margen derecho */
+            }
+        
+            /*CONTENIDO*/
+            .custom-summary {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 10px;
+                background-color: #040f1b;
+                color: #fff;
+                border-radius: .5rem;
+                transition: box-shadow 0.3s;
+                border: none;
+                cursor: pointer;
+                border-radius: 3px;
+                font-family: sans-serif;
+                font-size: 1.4rem;
+                overflow: hidden; /* Evita desbordamiento */
+                white-space: nowrap; /* Evita el salto de línea */
+                flex: 1; /* Ajusta el ancho del contenido */
+                margin: 0px 180px;
+            }
+        
+            .custom-summary:hover {
+                border-radius: .5em;
+                color: wheat;
+                cursor: pointer;
+                box-shadow: 0px 0px 50px #50ffff;
+                transition: box-shadow 0.3s;
+                background-color: none;
+                background-color: #007bff;
+                border: none;
+                padding: 5px 20px;
+            }
+        
+            .acordeon p {
+                margin-bottom: 20px; /* Aumenta la separación entre renglones */
+                text-indent: 20px; /* Sangría al inicio de cada párrafo */
+                line-height: 1.5; /* Ajusta la altura de línea para separar los renglones */
+                text-align: center; /* Alinea el texto al centro */
+            }
+            
+            
+            .acordeon {
+                padding: 16px; /* Espaciado dentro del contenedor */
+            }
+            
+        
+        
+        
+
         /* img{
             width: 100%;
             height: 100%;
