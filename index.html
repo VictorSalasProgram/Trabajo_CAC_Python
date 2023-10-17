@@ -1,382 +1,816 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/imagenes/icono.ico" />
-    <title>Trabajo Practico Integrador CiberBA</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!--ACA EMPIEZA LA NAVBAR-->
-    <nav class="navbar navbar-expand-lg custom-navbar" id="contenedor-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="/imagenes/icono2.png" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#accordionPanelsStayOpenExample"
-              >Servicios</a
-            >
-            <a class="nav-link" href="#nombre-form">Cotizaciones</a>
-            <a class="nav-link" aria-disabled="true">Contactanos</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- ACA TERMINA LA NAVBAR-->
-    <!-- ACA EMPIEZA EL CARUSEL-->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/imagenes/carusel3.jpg"
-            class="d-block w-100"
-            alt="Imagen de candado"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h2>Bienvenidos</h2>
-            <p>Tu seguridad como prioridad.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/imagenes/carusel2.jpg"
-            class="d-block w-100"
-            alt="Imagen de ciberseguridad"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Capacitación</h5>
-            <p>Cómo herramienta para combatir la ciberinseguridad.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/imagenes/carusel1.jpg"
-            class="d-block w-100"
-            alt="Imagen de ciberseguridad"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Información</h5>
-            <p>La información y correcta capacitación les dará seguridad.</p>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/imagenes/icono.ico" />
+  <title>Trabajo Practico Integrador CiberBA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--ACA EMPIEZA LA NAVBAR-->
+  <nav class="navbar navbar-expand-lg custom-navbar" id="contenedor-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/imagenes/icono2.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="#accordionPanelsStayOpenExample">Servicios</a>
+          <a class="nav-link" href="#nombre-form">Información</a>
+          <a class="nav-link" href="#titulo-form">Cotizaciones</a>
+        </div>
+      </div>
     </div>
-    <!-- ACA TERMINA EL CARUSEL-->
+  </nav>
+  <!-- ACA TERMINA LA NAVBAR-->
+  <!-- ACA EMPIEZA EL CARUSEL-->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/imagenes/carusel3.jpg" class="d-block w-100" alt="Imagen de candado" />
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Bienvenidos</h2>
+          <p>Tu seguridad como prioridad.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/carusel2.jpg" class="d-block w-100" alt="Imagen de ciberseguridad" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Capacitación</h5>
+          <p>Cómo herramienta para combatir la ciberinseguridad.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/imagenes/carusel1.jpg" class="d-block w-100" alt="Imagen de ciberseguridad" />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Información</h5>
+          <p>La información y correcta capacitación les dará seguridad.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- ACA TERMINA EL CARUSEL-->
 
-    <!--ACA EMPIEZA EL ACORDEON-->
+  <!--ACA EMPIEZA EL ACORDEON-->
 
-    <div class="fondo">
-      <h2 id="titulo-servicios">Servicios</h2>
-      <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne"
-              aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne"
-            >
-              Corporativo
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseOne"
-            class="accordion-collapse collapse show"
-          >
-            <div class="accordion-body">
-              Ofrecemos servicios a nivel corporativo, que incluyen
-              capacitaciones de seguridad informática que pueden combinarse con
-              ataques simulados de phishing. Únase a nuestros mas de 65.000
-              clientes para administrar el continuo problema de la ingeniería
-              social.
+  <div class="fondo">
+    <h2 id="titulo-servicios">Servicios</h2>
+    <div style="margin-left: 2rem; margin-right: 2rem;" class="accordion" id="accordionPanelsStayOpenExample">
+      <div style="margin-bottom: 1rem;" class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Corporativo
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/phishbutton.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Botón de alerta de phishing</h2>
             </div>
+            <p>¿Saben sus usuarios qué hacer cuando reciben un correo electrónico o un archivo adjunto sospechoso?</p>
+            <p>¿Saben sus usuarios qué hacer cuando reciben un correo electrónico sospechoso? ¿Deberían llamar al
+              servicio de asistencia técnica o reenviarlo? ¿Deberían reenviarlo a TI, incluidos todos los encabezados?
+              ¿Eliminarlo y no denunciarlo, perdiendo así una posible alerta temprana?</p>
+            <p>El botón GRATUITO de alerta de phishing de CiberBA (sí, lo leíste bien) brinda a sus usuarios una forma
+              segura de reenviar amenazas de correo electrónico al equipo de seguridad para su análisis y elimina el
+              correo electrónico de la bandeja de entrada del usuario para evitar exposiciones futuras. Todo con un solo
+              clic! ¡Y ahora es compatible con Outlook Mobile!</p>
+            <p>Beneficios de las alertas de phishing: Refuerza la cultura de seguridad de su organización. Los usuarios
+              pueden reportar correos electrónicos sospechosos con solo un clic. Incident Response recibe alertas
+              tempranas de phishing de los usuarios, creando una red de "sensores". El correo electrónico se elimina de
+              la bandeja de entrada del usuario para evitar una exposición futura. Fácil implementación mediante archivo
+              .EXE para Outlook, implementación de Google Workspace para Gmail (Chrome) e instalación de manifiesto para
+              Microsoft 365.</p>
+            <p>Capacitación en concientización sobre seguridad: Nota: ¡El botón de alerta de phishing es compatible con
+              Outlook 2010, 2013, 2016 y Outlook para Microsoft 365, Exchange 2013 y 2016, Chrome 54 y versiones
+              posteriores (Linux, OS X y Windows) y Outlook Mobile!</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/domdupli.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Dominio doble</h2>
+            </div>
+            <p>Descubra si su dominio tiene un gemelo malvado con la herramienta Domain Doppelgänger.</p>
+            <p>¡Descubra dominios parecidos peligrosos que podrían usarse en su contra!</p>
+            <p>Dado que los dominios similares son un vector peligroso para los ataques de phishing, es prioritario
+              monitorear dominios potencialmente dañinos que puedan falsificar su dominio.</p>
+            <p>Nuestra NUEVA herramienta Domain Doppelgänger le facilita identificar sus potenciales "gemelos del
+              dominio malvado" y combina la búsqueda, el descubrimiento, la generación de informes, los indicadores de
+              riesgo y la evaluación del usuario final con capacitación para que pueda tomar medidas ahora.</p>
+            <p>Así es como se hace:</p>
+            <p>DomainDoppelgangerResults-1Identificar dominios similares</p>
+            <p>Vea los resultados detallados de dominios similares que se encuentran similares a su dominio de correo
+              electrónico principal. Desde esta etapa, puede identificar fácilmente los sitios que ejecutan servidores
+              web o de correo e incluso ver la información de WHOIS si decide que necesita localizar al propietario de
+              un dominio.</p>
+            <p>Cuestiona a tus usuarios</p>
+            <p>Con sus resultados similares, ahora puede generar una prueba de evaluación en línea del mundo real para
+              enviarla a sus usuarios. Obtenga los resultados para ver qué sus usuarios pueden reconocer como dominios
+              "seguros" para su organización y comprenda qué tan conscientes son sus usuarios de la seguridad cuando se
+              trata de identificar dominios potencialmente fraudulentos o phishy.</p>
+            <p>Informes de su dominio Doppelgänger</p>
+            <p>Le enviaremos por correo electrónico un informe resumido en PDF que contiene una descripción general de
+              los dominios similares y los niveles de riesgo asociados descubiertos durante el análisis. También
+              recibirá un enlace al informe completo y detallado de todos los dominios similares que se encuentren
+              similares a su dominio de correo electrónico principal.</p>
+            <p>¡Solo te llevará unos minutos descubrir a tus “gemelos del dominio del mal”!</p>
+            <p>Datos requeridos para el dominio Doppelgänger: Necesitamos una dirección de correo electrónico válida del
+              dominio de su propia organización, por lo que no se pueden aceptar Gmail, AOL, Yahoo o cualquier otro ISP.
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/ramsonware.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Herramienta simulador de ransomware</h2>
+            </div>
+            <p>¿Su red es eficaz para bloquear ataques de ransomware y de ingeniería social?</p>
+            <p>¿Es su red eficaz contra las infecciones de ransomware cuando los empleados caen en ataques de ingeniería
+              social?</p>
+            <p>El simulador de ransomware "RanSim" de CiberBA le ofrece un vistazo rápido a la eficacia de la protección
+              de su red existente.</p>
+            <p>RanSim simulará 24 escenarios de infección de ransomware y 1 escenario de infección de criptominería y le
+              mostrará si una estación de trabajo es vulnerable.</p>
+            <p>Cómo funciona el Simulador RanSim:</p>
+            <p>RanSim: una herramienta de simulación de ransomware</p>
+            <p>Simulación 100% inofensiva de infecciones reales de ransomware y criptominería</p>
+            <p>No utiliza ninguno de sus propios archivos.</p>
+            <p>Prueba 25 tipos de escenarios de infección.</p>
+            <p>Simplemente descargue el instalador y ejecútelo.</p>
+            <p>¡Resultados en unos minutos!</p>
+            <p>NOTA: Creado para estaciones de trabajo basadas en Windows que ejecutan Windows 10+. RanSim no modifica
+              ningún archivo existente en el disco. Como parte de la simulación, RanSim enumera todos los archivos en
+              los
+              discos locales. Para fines de cifrado, los archivos de datos simulados se descargan de Internet.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/comunidad.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Creador de programas de concientización</h2>
+            </div>
+            <p>Obtenga su Programa de concientización sobre seguridad automatizado personalizado y gratuito con
+              calendario
+              y PDF.</p>
+
+            <p>Muchos profesionales de TI no saben exactamente por dónde empezar cuando se trata de crear un programa
+              cultural y de capacitación
+              en concientización sobre seguridad que funcione para su organización.
+              Hemos eliminado todas las conjeturas con nuestro Programa automatizado de concientización sobre la
+              seguridad
+              (ASAP), que se puede
+              implementar fácilmente en cualquier organización.</p>
+
+            <p>Programa automatizado de concientización sobre la seguridadASAP es una herramienta revolucionaria para
+              profesionales de TI que le
+              ayuda a crear su propio programa de concientización sobre la seguridad personalizado para su organización.
+              ¡ASAP te mostrará los
+              pasos necesarios para crear un programa de capacitación completamente maduro en solo unos minutos!</p>
+
+            <p>El programa incluye tareas procesables, consejos útiles, sugerencias de contenido de capacitación y un
+              calendario de gestión de
+              tareas. También tiene la posibilidad de exportar el programa completo como una versión detallada o de
+              resumen ejecutivo en formato
+              PDF. Esta es una excelente munición que lo ayudará a asegurar el presupuesto para su programa e informar a
+              la gerencia.</p>
+
+            <p>El proceso simple comienza respondiendo siete preguntas sobre sus objetivos y organización. Luego, ASAP
+              creará un programa y un
+              cronograma de tareas para usted automáticamente. Las tareas se basarán en las mejores prácticas y en una
+              vista de calendario sencilla
+              sobre cómo lograr sus objetivos de concientización sobre seguridad e implementar su programa.</p>
+
+            <p>Así es como funciona
+              Responda siete preguntas sobre los objetivos, las necesidades de cumplimiento y la cultura de su
+              organización
+              ASAP recomienda contenido de capacitación sugerido en función de sus respuestas
+              Vea un calendario detallado con una lista de tareas personalizada para comenzar su programa
+              Exporte fácilmente versiones en PDF de resumen ejecutivo y detallado de su programa
+              Prepare un programa de concientización completamente maduro en 5 minutos
+              ¡Descubra cómo será SU programa!</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/password.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Prueba de contraseña débil</h2>
+            </div>
+            <p>¿Sabías que el 81% de las infracciones relacionadas con la piratería utilizaron contraseñas robadas o
+              débiles?</p>
+
+            <p>¿Qué tan débiles son las contraseñas de sus usuarios?
+              ¿Las contraseñas de su usuario son…P@ssw0rd? Los ciberdelincuentes constantemente idean nuevas formas de
+              piratear su red mientras
+              evaden la detección.</p>
+
+            <p>Captura de pantalla del probador de contraseñas débiles de CiberBA Los empleados son el eslabón más débil
+              en la seguridad de la red,
+              usan contraseñas débiles y caen en ataques de phishing e ingeniería social.</p>
+
+            <p>El reciente informe de violación de datos de Verizon mostró que el 81% de las violaciones relacionadas
+              con la piratería utilizaron
+              contraseñas robadas y/o débiles.</p>
+
+            <p>La prueba de contraseña débil (WPT) gratuita de CiberBA comprueba su Active Directory en busca de varios
+              tipos diferentes de amenazas
+              relacionadas con contraseñas débiles.</p>
+
+            <p>WPT le brinda un vistazo rápido a la efectividad de sus políticas de contraseñas y cualquier falla para
+              que pueda tomar medidas. Esto
+              prueba contra 10 tipos de amenazas débiles relacionadas con contraseñas, por ejemplo; Débil, Duplicado,
+              Vacío, Nunca caduca y 6 más.</p>
+
+            <p>Así es como funciona la prueba de contraseña débil:
+              Informes sobre las cuentas que se ven afectadas
+              Pruebas contra 10 tipos de amenazas relacionadas con contraseñas débiles
+              No muestra ni informa sobre las contraseñas reales de las cuentas.
+              Simplemente descargue la instalación y ejecútela.
+              ¡Resultados en unos minutos!
+              ¡Esto le llevará 5 minutos y puede brindarle algunas ideas que nunca esperó!</p>
+
+            <p>Requisitos: Active Directory, Windows 7 o superior (32 o 64 bits)</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/domspoo.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Prueba de falsificación de dominio</h2>
+            </div>
+            <p>Una de las primeras cosas que intentan los piratas informáticos es ver si pueden falsificar la dirección
+              de correo electrónico de su
+              director ejecutivo.</p>
+
+            <p>¿Pueden los piratas informáticos falsificar una dirección de correo electrónico de su propio dominio?
+              ¿Es usted consciente de que una de las primeras cosas que intentan los piratas informáticos es ver si
+              pueden falsificar la dirección
+              de correo electrónico de su director ejecutivo? Si son capaces de cometer un "fraude del CEO", penetrar en
+              su red es como quitarle un
+              caramelo a un bebé.</p>
+
+            <p>Ahora pueden lanzar un ataque de phishing tipo "fraude del CEO" en su organización, y es muy difícil
+              defenderse de ese tipo de ataque,
+              a menos que sus usuarios estén altamente capacitados en "conciencia de seguridad". Una vez que los
+              ciberdelincuentes saben que pueden
+              falsificar cualquier dirección de correo electrónico, esto es lo siguiente que hacen:</p>
+
+            <p>Ataque cibercriminal mediante falsificación de correo electrónico </p>
+
+            <p>Una vez que tengan todas las direcciones de correo electrónico disponibles públicamente, comienza la
+              diversión. Cuantas más direcciones
+              de correo electrónico haya flotando por ahí, mayor será la huella de su ataque y mayor será el riesgo. A
+              menudo resulta sorprendente
+              saber cuántas direcciones existen realmente. Ahora pueden enviar a todos los empleados un correo
+              electrónico que supuestamente proviene
+              de Recursos Humanos, el CEO o quizás la sala de correo, y hacer ingeniería social a sus usuarios para que
+              hagan clic en un enlace. ¿Le
+              gustaría saber si los piratas informáticos pueden falsificar su dominio?</p>
+
+            <p>Regístrese para su prueba gratuita de falsificación de dominio
+              Descubra ahora si su dominio puede ser falsificado. La prueba de falsificación de dominio (DST) es un
+              servicio gratuito único. Puede
+              solicitar obtener este horario de verano para poder solucionar cualquier problema de configuración del
+              servidor de correo que encuentre.
+              NOTA: No todo el mundo está calificado para el horario de verano. No es para individuos, sino sólo para la
+              persona de la organización
+              responsable de la seguridad del correo electrónico. Necesitamos una dirección de correo electrónico válida
+              del dominio de su propia
+              organización, por lo que no se aceptan Gmail, AOL, Yahoo o cualquier otro ISP.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/phishing.jpg" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Prueba de seguridad de phishing</h2>
+            </div>
+            <p>¿Sabía que el 91% de las filtraciones de datos exitosas comenzaron con un ataque de phishing?</p>
+
+            <p>Descubra qué porcentaje de sus empleados son propensos a Phish™ con su prueba de seguridad de phishing
+              gratuita. Además, vea cómo se
+              compara con sus pares con los nuevos puntos de referencia de la industria del phishing.</p>
+
+            <p>Prueba de seguridad de phishing
+              Los profesionales de TI se han dado cuenta de que se necesitan con urgencia pruebas de phishing simuladas
+              como capa de seguridad
+              adicional. Hoy en día, hacer phishing a tus propios usuarios es tan importante como tener un antivirus y
+              un firewall. Es una práctica
+              recomendada de ciberseguridad divertida y eficaz parchear su última línea de defensa: USUARIOS</p>
+
+            <p>¿Por qué? Si no lo hace usted mismo, los malos actores lo harán.</p>
+
+            <p>Así es como funciona:</p>
+
+            <p>Inicie inmediatamente su prueba para hasta 100 usuarios (no es necesario hablar con nadie)
+              Seleccione entre más de 20 idiomas y personalice la plantilla de prueba de phishing según su entorno
+              Elija la página de destino que ven sus usuarios después de hacer clic
+              Muestre a los usuarios qué señales de alerta se perdieron o una página 404
+              Reciba un PDF por correo electrónico en 24 horas con su % propenso a phishing y gráficos para compartir
+              con la gerencia
+              Vea cómo se compara su organización con otras en su industria
+              El porcentaje de phishing suele ser mayor de lo esperado y es una gran munición para conseguir
+              presupuesto.</p>
+
+            <p>Comience a hacer phishing a sus usuarios ahora. ¡Complete el formulario y comience de inmediato!</p>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo"
-            >
-              Público
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseTwo"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              Servicio destinado a instituciones públicas, escuelas y publico en
-              general que busca conscientizar a un nivel más profundo sobre la
-              ciberseguridad.
+      </div>
+
+      <div style="margin-bottom: 1rem;" class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            Público
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/phishing.jpg" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Verificación de exposición de correo electrónico Pro
+              </h2>
             </div>
+            <p>¿Sus usuarios lo han convertido en un blanco fácil para el phishing? ¡Encuéntralo ahora!</p>
+
+
+            <p>¿Sabe cuántos de los correos electrónicos de sus usuarios se han filtrado o han quedado expuestos a
+              posibles piratas informáticos?
+              Muchas de las direcciones de correo electrónico e identidades de su organización están expuestas en
+              Internet y son fáciles de
+              encontrar para los ciberdelincuentes. Con esa superficie de ataque de correo electrónico, pueden lanzar
+              ataques de ingeniería social,
+              phishing y ransomware en su organización.</p>
+
+            <p>Informe de verificación de exposición de correo electrónico que contiene correos electrónicos
+              comprometidos</p>
+
+            <p>La NUEVA versión de Email Exposure Check Pro (EEC) de CiberBA identifica a los usuarios en riesgo en su
+              organización rastreando
+              información de redes sociales empresariales y ahora miles de bases de datos de violaciones.</p>
+
+            <p>Al utilizar la nueva inteligencia de datos sobre violaciones de SpyCloud, EEC Pro aprovecha una de las
+              fuentes de datos sobre
+              violaciones más grandes y actualizadas para ayudarlo a proteger proactivamente su organización contra
+              credenciales comprometidas.
+              Esto se hace en dos etapas:</p>
+
+            <p>Primera etapa: búsqueda web profunda
+              Realiza búsquedas profundas en la web para encontrar datos organizacionales disponibles públicamente. Esto
+              le mostrará cómo ve su
+              estructura organizativa un atacante, que puede utilizar para diseñar ataques de phishing dirigidos.</p>
+
+            <p>Segunda etapa: encuentra credenciales expuestas
+              Encuentra usuarios cuya información de cuenta haya quedado expuesta en cualquiera de varios miles de
+              infracciones. Estos usuarios
+              están particularmente en riesgo porque un atacante sabe más sobre ese usuario, ¡incluso sus contraseñas
+              reales!</p>
+
+            <p>Sus informes EEC Pro
+              Le enviaremos por correo electrónico un informe resumido en PDF de la cantidad de correos electrónicos
+              expuestos, identidades y niveles
+              de riesgo encontrados. También obtendrá un enlace al informe completo y detallado de los usuarios reales
+              encontrados, incluido el
+              nombre de la infracción y si se expuso una contraseña.</p>
+
+            <p>Obtener su informe EEC Pro solo le llevará unos minutos y, a menudo, es un descubrimiento revelador.</p>
+
+            <p>Datos requeridos para EEC Pro: Complete el formulario incluyendo el nombre de su empresa, el número de
+              empleados y su dirección de
+              correo electrónico válida del dominio de su propia organización, para que no se acepte Gmail, AOL, Yahoo
+              ni ningún otro ISP.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/ciberacoso.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Definicion de Ciberacoso
+              </h2>
+            </div>
+            <p>Ciberacoso es acoso o intimidación por medio de las tecnologías digitales. Puede ocurrir en las redes
+              sociales, las plataformas de
+              mensajería, las plataformas de juegos y los teléfonos móviles. Es un comportamiento que se repite y que
+              busca atemorizar, enfadar
+              o humillar a otras personas.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/chantaje.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Definicion de Ciberchantaje
+              </h2>
+            </div>
+            <p>En la pornovenganza, luego de rupturas amorosas o peleas, alguna de las personas involucradas difunde de
+              forma pública material íntimo
+              sin consentimiento de la otra con intención de dañar.</p>
+
+            <p>En la sextorsión, la persona es amenazada y deberá dar dinero o hacer algo a cambio de que no difundan
+              imágenes o videos íntimos.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/grooming.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Definicion de Grooming
+              </h2>
+            </div>
+            <p>Grooming es el acoso sexual de una persona adulta a una niña, un niño o un adolescente por medio de
+              internet. Las personas que
+              realizan grooming se llaman groomers o acosadores.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/hacking.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Definicion de hacking
+              </h2>
+            </div>
+            <p>¿Qué es el hacking?</p>
+
+            <p>El hackeo hace referencia a las actividades que buscan comprometer los dispositivos digitales, como
+              ordenadores, teléfonos inteligentes,
+              tabletas e incluso redes enteras.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/ramsonware.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Definición de Ransomware
+              </h2>
+            </div>
+            <p>El ransomware se define como malware malicioso que bloquea a los usuarios fuera de sus dispositivos o
+              bloquea el acceso a archivos
+              hasta que se paga una suma de dinero o un rescate. Los ataques de ransomware provocan tiempo de
+              inactividad, pérdida de datos, posible
+              robo de propiedad intelectual y, en determinadas industrias, un ataque se considera una violación de
+              datos.</p>
+
+            <p>Conozca más ejemplos de ransomware, phishing móvil y cómo prevenir ataques en nuestro recurso definitivo
+              contra ransomware.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/vishing.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Definición de Vishing
+              </h2>
+            </div>
+            <p>El vishing es un tipo de estafa de ingeniería social por teléfono en la que, a través de una llamada, se
+              suplanta la identidad de
+              una empresa, organización o persona de confianza, con el fin de obtener información personal y sensible de
+              la víctima.</p>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
-            >
-              Servicios Comunitarios
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseThree"
-            class="accordion-collapse collapse"
-          >
-            <div class="accordion-body">
-              Servicios gratuitos destinados a proveer información de interés público, 
-              consejos prácticos y a evaluar los conocimientos generales de la población.
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            Servicios Comunitarios
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/buzonvoz.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">¿Cómo hacer para configurar el buzón de voz?
+              </h2>
             </div>
+            <p>Cómo cambiar la configuración del buzón de voz</p>
+            <p>Abre la app de Teléfono .</p>
+            <p>En la esquina superior derecha, presiona Más opciones .</p>
+            <p>Presiona Configuración Buzón de voz.</p>
+            <p>Puedes hacer lo siguiente: Cambiar el proveedor que procesa los mensajes de voz: Presiona Configuración
+              avanzada Servicio.</p>
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/ctagoogle.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Como proteger tu cuenta de Google
+              </h2>
+            </div>
+            <p>El Doble Factor de Autenticación, también conocido como el Múltiple Factor de Autenticación, es una
+              técnica que tiene como
+              finalidad sumarle seguridad a tu perfil, más allá del nombre de usuario y la contraseña.</p>
+
+            <p>Para configurar la doble autenticación nos iremos a el icono Google</p>
+
+            <p>Seleccionamos la foto de nuestro perfil.</p>
+
+            <p>Luego a Administrar tu cuenta de Google.</p>
+
+            <p>Buscamos la opción "seguridad"</p>
+
+            <p>Buscamos "acceso a Google" y seleccionamos "verificación en dos pasos"</p>
+
+            <p>Se nos abrirá una página de google acount y le daremos a comenzar, siguiendo los pasos.</p>
+
+            <p>En este caso nos pregunta si es correcto el dispositivo que usamos y le damos a continuar</p>
+
+            <p>Confirmamos el número de nuestro teléfono y seleccionamos que nos envíe un pin por sms.</p>
+
+            <p>Esperamos a que nos llegue un sms con el código pin y lo cargamos en la solicitud de google</p>
+
+            <p>Para finalizar se valida el pin y se activa la opción de verificar en dos pasos.</p>
+
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/telegram.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Como proteger tu cuenta de telegram
+              </h2>
+            </div>
+            <p>La mensajería Telegram, con el tiempo, se ha vuelto cada vez más utilizada por los usuarios.</p>
+
+            <p>Es importante que siempre tengamos en cuenta que podemos revisar las opciones de “privacidad y seguridad”
+              cuando querramos para
+              proteger nuestra cuenta y privacidad.</p>
+
+            <p>Algunas opciones esenciales a prestarte atención:</p>
+
+            <p>Decidir quién querés que vea tu número de teléfono, tu última conexión, estado en línea y quién puede
+              llamarte.</p>
+
+            <p>Activar la verificación en dos pasos “agregando una contraseña”.</p>
+
+            <p>Habilitar “autoeliminar tus mensajes automáticamente”.</p>
+
+            <p>Configurar un código de bloqueo y hasta agregar tu huella digital, en caso de que vos solo quieras tener
+              acceso a tu cuenta
+              de Telegram.</p>
+
+            <p>En “Dispositivos”, sabrás a qué equipo está conectada tu cuenta, y tendrás la posibilidad de
+              desvincularlos.</p>
+
+
+            <p>‼️Resguardemos nuestros datos personales y no permitamos que cualquier persona acceda a nuestra
+              información.</p>
+
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/whatsapp.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Como proteger tu cuenta de whatsapp
+              </h2>
+            </div>
+            <p>Actualmente, la plataforma que más utilizamos, sea para cuestiones personales, laborales o comerciales,
+              es WhatsApp… y la
+              mayoría de estafas que se escuchan que suceden, ocurren ahí.</p>
+
+            <p>Las más comunes son: mensajes desconocidos de algún concurso para ganar un producto, sorteo, promoción,
+              envío de regalo,
+              oferta de trabajo, compra/venta... todas excusas que haciendo clic en algún enlace malicioso, te roba tus
+              datos. Esto sucede
+              a través de phishing.</p>
+
+            <p>Hoy te tramos algunos consejos para resguardar tu cuenta de WhatsApp:</p>
+
+            <p>Evitá compartir el código de activación de 6 digitos que te llega por SMS.</p>
+
+            <p>Agregale un pin personal a tu cuenta para aumentar la seguridad: Ingresá a Ajustes – Configuración –
+              Cuenta – Verificación
+              en dos pasos – Activar.</p>
+
+            <p> Tu foto de perfil solo la deben poder ver tus contactos. Clikeá Ajustes/Config – Cuenta – Privacidad –
+              Foto de perfil
+              – Mis contactos.</p>
+
+            <p> Si un familiar o amigo te hace un pedido inusual o extraño por WhatsApp, llamalo para verificar su
+              identidad.</p>
+
+
+            <>Cuidemos nuestra información y datos personales, resguardando nuestra identidad digital de la manera más
+              segura posible.</p>
+
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/redesoc.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Como proteger tus cuentas en las redes sociales
+              </h2>
+            </div>
+            <p>El Doble Factor de Autenticación, también conocido como el Múltiple Factor de Autenticación, es una
+              técnica que tiene como
+              finalidad sumarle seguridad a tu perfil, más allá del nombre de usuario y la contraseña.</p>
+
+            <p>Para configurar la doble autenticación nos iremos a el icono Google</p>
+
+            <p>Seleccionamos la foto de nuestro perfil.</p>
+
+            <p>Luego a Administrar tu cuenta de Google.</p>
+
+            <p>Buscamos la opción "seguridad"</p>
+
+            <p>Buscamos "acceso a Google" y seleccionamos "verificación en dos pasos"</p>
+
+            <p>Se nos abrirá una página de google acount y le daremos a comenzar, siguiendo los pasos.</p>
+
+            <p>En este caso nos pregunta si es correcto el dispositivo que usamos y le damos a continuar</p>
+
+            <p>Confirmamos el número de nuestro teléfono y seleccionamos que nos envíe un pin por sms.</p>
+
+            <p>Esperamos a que nos llegue un sms con el código pin y lo cargamos en la solicitud de google</p>
+
+            <p>Para finalizar se valida el pin y se activa la opción de verificar en dos pasos.</p>
+
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/cabemail.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Extrae cabeceras del correo electronico
+              </h2>
+            </div>
+            <p>Para leer las cabeceras de los correos electrónicos en tu escritorio: Haga doble clic en el correo cuyas
+              cabeceras
+              desee leer, para abrirlo. Haga clic en Archivo > Propiedades. Ahora puede ver la información de la
+              cabecera del mensaje
+              en el cuadro "Cabeceras de Internet".</p>
+
+          </div>
+          <div class="accordion-body">
+            <div style="display: flex;">
+              <img src="/imagenes/emailexp.ico" alt="Icono de alerta de phishing" width="50" height="50">
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Material Gratuito
+              </h2>
+            </div>
+            <p>Obtenga los recursos que necesita para ayudar a mantener a sus usuarios a salvo de ataques maliciosos de
+              ingeniería social.
+              Las amenazas cibernéticas pueden dar miedo, y con razón. El malware puede estar acechando en un correo
+              electrónico sospechoso
+              en el que se convence a los usuarios para que hagan clic. Todo lo que se necesita es una rendija en la
+              puerta de su red para
+              dejar entrar a todos los que no deben; brujas de phishing, lobos rapaces voraces, ¡lo que sea!</p>
+
+            <p>¡Pero no temas! Si bien las antorchas, las horcas y las balas de plata nunca acaban con una filtración de
+              datos, una
+              cultura de seguridad resiliente en su organización es su mejor opción para mantener a raya a las bestias.
+              Es por eso que
+              hemos reunido estos recursos gratuitos que puede utilizar durante todo el mes de octubre para ayudar a sus
+              usuarios a
+              mantener sus defensas de ciberseguridad. ¡Solicite su kit de recursos gratuito ahora!</p>
+
+            <p> Esto es lo que obtendrás:</p>
+
+            <p> Acceso a recursos gratuitos para usted, incluidos nuestros seminarios web y documentos técnicos a pedido
+              más populares
+              Recursos para ayudarle a planificar sus actividades, incluida la Guía del usuario del Mes de
+              concientización sobre la
+              ciberseguridad y el Planificador semanal de concientización sobre la ciberseguridad</p>
+
+            <p>¡NUEVO! Módulo de vídeo destacado para sus usuarios: "La cultura de seguridad y usted"; además de ocho
+              vídeos adicionales
+              y módulos de formación interactivos, todos disponibles en varios idiomas</p>
+
+            <p>¡NUEVO! Cuatro boletines informativos con sugerencias y consejos de seguridad; además de documentos de
+              seguridad adicionales
+              y consejos de concientización, todos disponibles en varios idiomas</p>
+
+            <p>¡NUEVO! Cinco carteles y tarjetas de personajes de monstruos cibernéticos; además de carteles adicionales
+              y recursos de
+              señalización digital disponibles en varios idiomas</p>
+
           </div>
         </div>
       </div>
     </div>
 
     <!--ACA TERMINA EL ACORDEON-->
- 
+
     <!--ACA EMPIEZA EL FORM-->
     <form>
-    <div class="fondo">
-      <h2 id="titulo-form">Pedido de Información</h2>
-      <div id="nombre-form">
-        <label>Nombre: </label> <br />
-        <input
-          type="text"
-          class="form-control"
-          id="form-name"
-          placeholder="Escribe tu nombre"
-          aria-label="Username"
-        />
-      </div>
-
-      <div id="telefono-form">
-        <label id="label-space">Teléfono: </label> <br />
-        <input
-          type="tel"
-          class="form-control"
-          placeholder="Escribe tu telefono, incluyendo codigo de país y ciudad"
-          aria-label="Recipient's telephone"
-          id="form-telefono"
-        />
-      </div>
-      <div id="email-form">
-        <label>Correo: </label>  <br />
-        <input
-          type="email"
-          class="form-control"
-          placeholder="Escribe tu email"
-          aria-label="Recipient's username"
-          id="form-correo"
-        />
-      </div>
-
-      <div id="email-form">
-      <label> Selecciona un servicio:</label> <br />
-      
-      <select
-        id="select"
-      >
-        <option value="1">Privado</option>
-        <option value="2">Público</option>
-        <option value="3">Servicios comunitarios</option>
-      </select>
-      </div>
-
-      <div id="coment-form"> 
-        <label class="label"> Deje su comentario: </label> <br />
-        <input
-          type="textarea"
-          class="form-control"
-        />
-      </div>
-      <div id="contenedor-check">
-        <div style="margin-top:1rem ;" class="form-check" id="check-form">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <label class="form-check-label" for="flexCheckDefault">
-            Aceptar <a href="/vistas/terminos.html" target="_blank">Terminos & condiciones.</a>
-          </label>
+      <div class="fondo">
+        <h2 id="titulo-form">Pedido de Información</h2>
+        <div id="nombre-form">
+          <label>Nombre: </label> <br />
+          <input type="text" class="form-control" id="form-name" placeholder="Escribe tu nombre"
+            aria-label="Username" />
         </div>
-      </div>
 
-      <div id="botonera">
-        <button class="btn btn-danger" id="boton-borrar" type="button">
-          Borrar
-        </button>
-        <input
-          class="btn btn-primary"
-          type="submit"
-          value="Enviar"
-          id="boton-calcular"
-          style="margin-left: 1rem;"
-        />
-      </div>
+        <div id="telefono-form">
+          <label id="label-space">Teléfono: </label> <br />
+          <input type="tel" class="form-control" placeholder="Escribe tu telefono, incluyendo codigo de país y ciudad"
+            aria-label="Recipient's telephone" id="form-telefono" />
+        </div>
+        <div id="email-form">
+          <label>Correo: </label> <br />
+          <input type="email" class="form-control" placeholder="Escribe tu email" aria-label="Recipient's username"
+            id="form-correo" />
+        </div>
+
+        <div id="email-form">
+          <label> Selecciona un servicio:</label> <br />
+
+          <select id="select">
+            <option value="1">Privado</option>
+            <option value="2">Público</option>
+            <option value="3">Servicios comunitarios</option>
+          </select>
+        </div>
+
+        <div id="coment-form">
+          <label class="label"> Deje su comentario: </label> <br />
+          <input type="textarea" class="form-control" />
+        </div>
+        <div id="contenedor-check">
+          <div style="margin-top:1rem ;" class="form-check" id="check-form">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label class="form-check-label" for="flexCheckDefault">
+              Aceptar <a href="/vistas/terminos.html" target="_blank">Terminos & condiciones.</a>
+            </label>
+          </div>
+        </div>
+
+        <div id="botonera">
+          <button class="btn btn-danger" id="boton-borrar" type="button">
+            Borrar
+          </button>
+          <input class="btn btn-primary" type="submit" value="Enviar" id="boton-calcular" style="margin-left: 1rem;" />
+        </div>
     </form>
-      <!-- ACA TERMINA EL FORM-->
-      <h2 style="margin-top: 2rem;" id="titulo-form">Pedido de cotización</h2>
+    <!-- ACA TERMINA EL FORM-->
+    <h2 style="margin-top: 2rem;" id="titulo-form">Pedido de cotización</h2>
 
     <div class="container">
-        <form id="miFormulario">
-            <div class="columna">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br>
-                <label for="correo">Correo:</label><br>
-                <input type="email" id="correo" name="correo"><br>
-            </div>
-            <div class="columna">
-                <label for="empresa">Empresa:</label><br>
-                <input type="text" id="empresa" name="empresa"><br>
-                <label for="empleados">Cantidad de empleados:</label><br>
-                <input type="number" id="empleados" name="empleados"><br>
-            </div>
-            <div class="columna">
-                <label for="servicio">Selecciona un servicio:</label><br>
-                <select id="servicio" name="servicio">
-                    <option value="">Selecciona un servicio</option>
-                    <option value="corporativo">Corporativo</option>
-                    <option value="publico">Público</option>
-                    <option value="comunitario">Servicio Comunitario</option>
-                </select><br>
-            </div>
-            <div class="botones">
-                <button type="reset">Borrar</button><br>
-                <button type="submit">Cotizar</button><br>
-            </div>
-        </form>
-        <div id="resultado"></div>
-    </div>
-
-      <!--EMPIEZA QUIENES SOMOS-->
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <img
-              src="/imagenes/card1.jpg"
-              class="img-fluid rounded-start"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-6">
-            <div class="card-body2">
-              <h5 class="card-title" id="card-title">¿Quienes somos?</h5>
-              <p class="card-text card-text-custom">
-                Somos una empresa de ciberseguridad comprometida con la
-                protección de su mundo digital. En CiberBA, nos
-                especializamos en brindar soluciones avanzadas de capacitación
-                para salvaguardar sus datos, su privacidad y su tranquilidad en
-                línea. Con un equipo de expertos altamente capacitados y
-                apasionados por la seguridad cibernética, estamos aquí para
-                enfrentar las amenazas digitales más desafiantes. Nuestra misión
-                es simple pero poderosa: protegerlo a usted y a su negocio en un
-                mundo cada vez más conectado y expuesto a riesgos cibernéticos.
-                Confíe en nosotros para estar un paso adelante de las amenazas y
-                garantizar que su presencia en línea esté siempre segura.
-              </p>
-            </div>
-          </div>
+      <form id="miFormulario">
+        <div class="columna">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre"><br>
+          <label for="correo">Correo:</label><br>
+          <input type="email" id="correo" name="correo"><br>
         </div>
-      </div>
-      <!--TERMINA QUIENES SOMOS-->
-      <!--ACA EMPIEZA EL FOOTER-->
-      <ul class="nav justify-content-center" id="footer">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/vistas/terminos.html"
-            >Terminos & condiciones</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <!--ACA TERMINA EL FOOTER-->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"
-      ></script>
-
-      <script src="javascript.js"></script>
+        <div class="columna">
+          <label for="empresa">Empresa:</label><br>
+          <input type="text" id="empresa" name="empresa"><br>
+          <label for="empleados">Cantidad de empleados:</label><br>
+          <input type="number" id="empleados" name="empleados"><br>
+        </div>
+        <div class="columna">
+          <label for="servicio">Selecciona un servicio:</label><br>
+          <select id="servicio" name="servicio">
+            <option value="">Selecciona un servicio</option>
+            <option value="corporativo">Corporativo</option>
+            <option value="publico">Público</option>
+            <option value="comunitario">Servicio Comunitario</option>
+          </select><br>
+        </div>
+        <div class="botones">
+          <button type="reset">Borrar</button><br>
+          <button type="submit">Cotizar</button><br>
+        </div>
+      </form>
+      <div id="resultado"></div>
     </div>
-  </body>
+
+    <!--EMPIEZA QUIENES SOMOS-->
+      <div class="containerSomos">
+        <div class="columnSomos">
+            <img src="/imagenes/card1.jpg" alt="..." />
+        </div>
+        <div class="columnSomos">
+            <h2>¿Quienes somos?</h2>
+            <p>Somos una empresa de ciberseguridad comprometida con la protección de su mundo digital. En CiberBA, nos especializamos en brindar soluciones avanzadas de capacitación para salvaguardar sus datos, su privacidad y su tranquilidad en línea. Con un equipo de expertos altamente capacitados y apasionados por la seguridad cibernética, estamos aquí para enfrentar las amenazas digitales más desafiantes. Nuestra misión es simple pero poderosa: protegerlo a usted y a su negocio en un mundo cada vez más conectado y expuesto a riesgos cibernéticos. Confíe en nosotros para estar un paso adelante de las amenazas y garantizar que su presencia en línea esté siempre segura.</p>
+        </div>
+    </div>
+  </div>
+  
+    <!--TERMINA QUIENES SOMOS-->
+    <!--ACA EMPIEZA EL FOOTER-->
+    <ul class="nav justify-content-center" id="footer">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/vistas/terminos.html">Terminos & condiciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <!--ACA TERMINA EL FOOTER-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+    <script src="javascript.js"></script>
+  </div>
+</body>
+
 </html>
