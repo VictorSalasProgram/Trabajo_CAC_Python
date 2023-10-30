@@ -72,3 +72,42 @@ document.getElementById('miFormulario').addEventListener('submit', function (eve
         document.getElementById('resultado').innerHTML = "Por favor, selecciona un servicio.";
     }
 });
+
+document.getElementById('miFormulario').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+    var nombre = document.getElementById('nombre').value;
+    var correo = document.getElementById('correo').value;
+    var empresa = document.getElementById('empresa').value;
+    var empleados = document.getElementById('empleados').value;
+    var servicio = document.getElementById('servicio').value;
+    var terminos = document.getElementById('flexCheckDefault').checked;
+
+    // Validación de los campos
+    if (nombre === "" || correo === "" || empresa === "" || empleados === "" || servicio === "") {
+        alert("Por favor, completa todos los campos.");
+        return false;
+    }
+
+    // Validación del correo electrónico
+    var regexCorreo = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    if (!regexCorreo.test(correo)) {
+        alert("Por favor, introduce un correo electrónico válido.");
+        return false;
+    }
+
+    // Validación de la cantidad de empleados
+    if (empleados < 1) {
+        alert("Por favor, introduce una cantidad válida de empleados.");
+        return false;
+    }
+
+    // Validación de los términos y condiciones
+    if (!terminos) {
+        alert("Por favor, acepta los términos y condiciones.");
+        return false;
+    }
+
+    // Si todas las validaciones pasan, el formulario se puede enviar
+    alert("El formulario se ha enviado correctamente.");
+});

@@ -167,8 +167,12 @@ label {
 #contenedor-check {
     display: block;
     margin: 0 auto;
-    width: 20%;
-    margin-bottom: 2em;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+#contenedor-check a {
+    color: whitesmoke;
 }
 
 #check-form {
@@ -237,7 +241,7 @@ form select {
     display: flex;
     justify-content: center;
     margin: 1rem;
-    gap: 1rem;
+    gap: .7rem;
 }
 
 .container button {
@@ -293,6 +297,40 @@ form select {
     position: relative;
     overflow: hidden;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+}
+
+.navbar .navbar-brand {
+    margin-right: 1em;
+}
+
+.navbar .navbar-brand img {
+    height: 2em;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
 
 .nav-link::after {
     content: '';

@@ -13,23 +13,18 @@
 
 <body>
   <!--ACA EMPIEZA LA NAVBAR-->
-  <nav class="navbar navbar-expand-lg custom-navbar" id="contenedor-navbar">
+  <nav class="navbar" id="contenedor-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="/imagenes/icono2.png" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link" href="#accordionPanelsStayOpenExample">Servicios</a>
-          <a class="nav-link" href="#nombre-form">Información</a>
-          <a class="nav-link" href="#titulo-form">Cotizaciones</a>
-        </div>
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link" href="#accordionPanelsStayOpenExample">Servicios</a>
+        <a class="nav-link" href="#nombre-form">Información</a>
+        <a class="nav-link" href="#titulo-form">Cotizaciones</a>
       </div>
     </div>
   </nav>
+
   <!-- ACA TERMINA LA NAVBAR-->
   <!-- ACA EMPIEZA EL CARUSEL-->
   <div id="carouselExampleCaptions" class="carousel slide">
@@ -726,24 +721,17 @@
           <label class="label"> Deje su comentario: </label> <br />
           <input type="textarea" class="form-control" />
         </div>
-        <div id="contenedor-check">
-          <div style="margin-top:1rem ;" class="form-check" id="check-form">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-            <label class="form-check-label" for="flexCheckDefault">
-              Aceptar <a href="/vistas/terminos.html" target="_blank">Terminos & condiciones.</a>
-            </label>
-          </div>
-        </div>
 
-        <div id="botonera">
-          <button class="btn btn-danger" id="boton-borrar" type="button">
-            Borrar
-          </button>
-          <input class="btn btn-primary" type="submit" value="Enviar" id="boton-calcular" style="margin-left: 1rem;" />
+
+        <div style="margin-top: 1rem;" class="container">
+          <div class="botones">
+            <button type="reset">Borrar</button><br>
+            <button type="submit">Enviar</button><br>
+          </div>
         </div>
     </form>
     <!-- ACA TERMINA EL FORM-->
-    <h2 style="margin-top: 2rem;" id="titulo-form">Pedido de cotización</h2>
+    <h2 style="margin-top: 1rem;" id="titulo-form">Pedido de cotización</h2>
 
     <div class="container">
       <form id="miFormulario">
@@ -768,48 +756,63 @@
             <option value="comunitario">Servicio Comunitario</option>
           </select><br>
         </div>
+        <div id="contenedor-check">
+          <div style="margin-top:1rem ;" class="form-check" id="check-form">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            <label class="form-check-label" for="flexCheckDefault">
+              Aceptar <a href="/vistas/terminos.html" target="_blank">Términos & condiciones.</a>
+            </label>
+          </div>
+        </div>
         <div class="botones">
           <button type="reset">Borrar</button><br>
           <button type="submit">Cotizar</button><br>
         </div>
       </form>
+      <h2 id="titulo-form" style="margin-top: 2rem; margin-bottom: 1rem;">Estimación de servicio</h2>
       <div id="resultado"></div>
     </div>
 
     <!--EMPIEZA QUIENES SOMOS-->
-      <div class="containerSomos">
-        <div class="columnSomos">
-            <img src="/imagenes/card1.jpg" alt="..." />
-        </div>
-        <div class="columnSomos">
-            <h2>¿Quienes somos?</h2>
-            <p>Somos una empresa de ciberseguridad comprometida con la protección de su mundo digital. En CiberBA, nos especializamos en brindar soluciones avanzadas de capacitación para salvaguardar sus datos, su privacidad y su tranquilidad en línea. Con un equipo de expertos altamente capacitados y apasionados por la seguridad cibernética, estamos aquí para enfrentar las amenazas digitales más desafiantes. Nuestra misión es simple pero poderosa: protegerlo a usted y a su negocio en un mundo cada vez más conectado y expuesto a riesgos cibernéticos. Confíe en nosotros para estar un paso adelante de las amenazas y garantizar que su presencia en línea esté siempre segura.</p>
-        </div>
+    <div class="containerSomos">
+      <div class="columnSomos">
+        <img src="/imagenes/card1.jpg" alt="..." />
+      </div>
+      <div class="columnSomos">
+        <h2>¿Quienes somos?</h2>
+        <p>Somos una empresa de ciberseguridad comprometida con la protección de su mundo digital. En CiberBA, nos
+          especializamos en brindar soluciones avanzadas de capacitación para salvaguardar sus datos, su privacidad y su
+          tranquilidad en línea. Con un equipo de expertos altamente capacitados y apasionados por la seguridad
+          cibernética, estamos aquí para enfrentar las amenazas digitales más desafiantes. Nuestra misión es simple pero
+          poderosa: protegerlo a usted y a su negocio en un mundo cada vez más conectado y expuesto a riesgos
+          cibernéticos. Confíe en nosotros para estar un paso adelante de las amenazas y garantizar que su presencia en
+          línea esté siempre segura.</p>
+      </div>
     </div>
   </div>
-  
-    <!--TERMINA QUIENES SOMOS-->
-    <!--ACA EMPIEZA EL FOOTER-->
-    <ul class="nav justify-content-center" id="footer">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="/vistas/terminos.html">Terminos & condiciones</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <!--ACA TERMINA EL FOOTER-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
 
-    <script src="javascript.js"></script>
+  <!--TERMINA QUIENES SOMOS-->
+  <!--ACA EMPIEZA EL FOOTER-->
+  <ul class="nav justify-content-center" id="footer">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="/vistas/terminos.html">Terminos & condiciones</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+  <!--ACA TERMINA EL FOOTER-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="javascript.js"></script>
   </div>
 </body>
 
