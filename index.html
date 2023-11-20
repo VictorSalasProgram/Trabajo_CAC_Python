@@ -20,15 +20,16 @@
       <a class="navbar-brand" href="#"><img src="/imagenes/icono2.png" /></a>
       <div class="navbar-nav">
         <a class="nav-link" aria-current="page" href="#">Inicio</a>
-        <a class="nav-link" href="#accordionPanelsStayOpenExample">Servicios</a>
-        <a class="nav-link" href="#nombre-form">Información</a>
-        <a class="nav-link" href="#titulo-form">Cotizaciones</a>
+        <a class="nav-link" href="#aserv">Servicios</a>
+        <a class="nav-link" href="#ainfo">Información</a>
+        <a class="nav-link" href="#acoti">Cotizaciones</a>
       </div>
     </div>
   </nav>
 
   <!-- ACA TERMINA LA NAVBAR-->
-  <!-- ACA EMPIEZA EL CARUSEL-->
+
+  <!-- ACA EMPIEZA EL CARRUSEL-->
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -70,22 +71,22 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!-- ACA TERMINA EL CARUSEL-->
+  <!-- ACA TERMINA EL CARRUSEL-->
 
   <!--ACA EMPIEZA EL ACORDEON-->
-
-  <div class="fondo">
+  <div id="aserv"> </div>
+  <main class="fondo">
     <h2 id="titulo-servicios">Servicios</h2>
     <div style="margin-left: 2rem; margin-right: 2rem;" class="accordion" id="accordionPanelsStayOpenExample">
-      <div style="margin-bottom: 1rem;" class="accordion-item">
+      <section style="margin-bottom: 1rem;" class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-            aria-controls="panelsStayOpen-collapseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne"
+            style="font-weight:bold">
             Corporativo
           </button>
         </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
           <div class="accordion-body">
             <div style="display: flex;">
               <img src="/imagenes/phishbutton.ico" alt="Icono de alerta de phishing" width="50" height="50">
@@ -320,7 +321,7 @@
 
             <p>Inicie inmediatamente su prueba para hasta 100 usuarios (no es necesario hablar con nadie)
               Seleccione entre más de 20 idiomas y personalice la plantilla de prueba de phishing según su entorno
-              Elija la página de destino que ven sus usuarios después de hacer clic
+              Elija la página de destino que ven sus usuarios después de hacer click
               Muestre a los usuarios qué señales de alerta se perdieron o una página 404
               Reciba un PDF por correo electrónico en 24 horas con su % propenso a phishing y gráficos para compartir
               con la gerencia
@@ -331,13 +332,13 @@
             <p>Comience a hacer phishing a sus usuarios ahora. ¡Complete el formulario y comience de inmediato!</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div style="margin-bottom: 1rem;" class="accordion-item">
+      <section style="margin-bottom: 1rem;" class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseTwo">
+            aria-controls="panelsStayOpen-collapseTwo" style="font-weight:bold">
             Público
           </button>
         </h2>
@@ -472,12 +473,12 @@
               la víctima.</p>
           </div>
         </div>
-      </div>
-      <div class="accordion-item">
+      </section>
+      <section class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-            aria-controls="panelsStayOpen-collapseThree">
+            aria-controls="panelsStayOpen-collapseThree" style="font-weight:bold">
             Servicios Comunitarios
           </button>
         </h2>
@@ -591,7 +592,7 @@
               identidad.</p>
 
 
-            <>Cuidemos nuestra información y datos personales, resguardando nuestra identidad digital de la manera más
+            <p>Cuidemos nuestra información y datos personales, resguardando nuestra identidad digital de la manera más
               segura posible.</p>
 
           </div>
@@ -642,7 +643,7 @@
           <div class="accordion-body">
             <div style="display: flex;">
               <img src="/imagenes/emailexp.ico" alt="Icono de alerta de phishing" width="50" height="50">
-              <h2 style="margin-left: 1rem; margin-bottom: 1rem;">Material Gratuito
+              <h2 style="margin-left: 1rem; margin-bottom: 1rem;"> Material Gratuito
               </h2>
             </div>
             <p>Obtenga los recursos que necesita para ayudar a mantener a sus usuarios a salvo de ataques maliciosos de
@@ -651,7 +652,7 @@
               electrónico sospechoso
               en el que se convence a los usuarios para que hagan clic. Todo lo que se necesita es una rendija en la
               puerta de su red para
-              dejar entrar a todos los que no deben; brujas de phishing, lobos rapaces voraces, ¡lo que sea!</p>
+              dejar entrar a todos los que no deben; brujas de phishing, lobos rapaces o voraces, ¡lo que sea!</p>
 
             <p>¡Pero no temas! Si bien las antorchas, las horcas y las balas de plata nunca acaban con una filtración de
               datos, una
@@ -683,34 +684,36 @@
 
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <!--ACA TERMINA EL ACORDEON-->
 
     <!--ACA EMPIEZA EL FORM-->
     <form>
+      <div id="ainfo"> </div>
+
       <div class="fondo">
         <h2 id="titulo-form">Pedido de Información</h2>
         <div id="nombre-form">
-          <label>Nombre: </label> <br />
+          <label><i class="fa fa-user" aria-hidden="true"></i> Nombre: </label> <br />
           <input type="text" class="form-control" id="form-name" placeholder="Escribe tu nombre"
             aria-label="Username" />
         </div>
 
         <div id="telefono-form">
-          <label id="label-space">Teléfono: </label> <br />
+          <label id="label-space"><i class="fa fa-phone" style="color: #fcfcf9;"></i>Teléfono: </label> <br />
           <input type="tel" class="form-control" placeholder="Escribe tu telefono, incluyendo codigo de país y ciudad"
             aria-label="Recipient's telephone" id="form-telefono" />
         </div>
         <div id="email-form">
-          <label>Correo: </label> <br />
+          <label><i class="fa fa-envelope" aria-hidden="true"></i> Correo: </label> <br />
           <input type="email" class="form-control" placeholder="Escribe tu email" aria-label="Recipient's username"
             id="form-correo" />
         </div>
 
         <div id="email-form">
-          <label> Selecciona un servicio:</label> <br />
+          <label><i class="fa fa-handshake-o" aria-hidden="true"></i> Selecciona un servicio:</label> <br />
 
           <select id="select">
             <option value="1">Privado</option>
@@ -720,7 +723,7 @@
         </div>
 
         <div id="coment-form">
-          <label class="label"> Deje su comentario: </label> <br />
+          <label class="label"><i class="fa fa-comment"></i> Deje su comentario: </label> <br />
           <input type="textarea" class="form-control" />
         </div>
 
@@ -733,6 +736,10 @@
         </div>
     </form>
     <!-- ACA TERMINA EL FORM-->
+
+     <!-- ACA EMPIEZA EL PEDIDO DE COTIZACION-->
+     <div id="acoti"> </div>
+
     <h2 style="margin-top: 1rem;" id="titulo-form">
       <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Pedido de cotización
     </h2>
@@ -780,7 +787,7 @@
       </h2>
       <div id="resultado"></div>
     </div>
-
+  <!--TERMINA EL PEDIDO DE COTIZACION-->
 
     <!--EMPIEZA QUIENES SOMOS-->
     <div class="containerSomos">
@@ -798,31 +805,36 @@
           línea esté siempre segura.</p>
       </div>
     </div>
-  </div>
+  </main>
 
   <!--TERMINA QUIENES SOMOS-->
   <!--ACA EMPIEZA EL FOOTER-->
-  <ul class="nav justify-content-center" id="footer">
-    <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="/vistas/terminos.html">Terminos & condiciones</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-    </li>
-  </ul>
+  <footer>
+    <ul class="nav justify-content-center" id="footer">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/vistas/terminos.html">Terminos & condiciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aserv">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ainfo">Información</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#acoti">Cotizaciones</a>
+      </li>
+    </ul>
+  </footer>
   <!--ACA TERMINA EL FOOTER-->
+
+  <!--ACA ESTA LA IMPORTACION DE JAVASCRIPT-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
   <script src="javascript.js"></script>
   </div>
+<!--ACA TERMINA LA IMPORTACION DE JAVASCRIPT-->
 </body>
 
 </html>

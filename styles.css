@@ -29,11 +29,12 @@ body {
 
 .accordion .accordion-header {
   background-color: #fff;
-  color: whitesmoke;
+  color: #0c2035;
 }
 
 .accordion-button {
-  color: whitesmoke;
+  background-color: #fff;
+  color: #0c2035;
 }
 
 .accordion .accordion-body {
@@ -44,8 +45,8 @@ body {
 }
 
 .accordion .accordion-button.collapsed {
-  background-color: #0c2035;
-  color: whitesmoke;
+  background-color: #f7f8f9;
+  color: #0c2035;
   border-bottom: 1px solid;
   border-top: 1px solid;
 }
